@@ -189,7 +189,7 @@ section[id], .page[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
 
 .site-header {
   position: sticky; top: 0; z-index: 100; background: rgba(255, 255, 255, .96);
-  backdrop-filter: saturate(160%) blur(8px); border-bottom: 1px solid var(--line);
+  -webkit-backdrop-filter: saturate(160%) blur(8px); backdrop-filter: saturate(160%) blur(8px); border-bottom: 1px solid var(--line);
 }
 .site-header.is-scrolled { box-shadow: 0 4px 24px rgba(12, 26, 42, .08); }
 .nav-wrap { display: flex; align-items: center; justify-content: space-between; height: var(--header-h); gap: 24px; }
@@ -644,3 +644,51 @@ form.is-sent .form-body { display: none; }
 .main-nav > li > a { position: relative; }
 .main-nav .nav-cta a.is-active::after { display: none; }
 @media (max-width: 980px) { .main-nav > li > a.is-active::after { display: none; } }
+
+/* 8. Fixuri mobil ----------------------------------------------------- */
+html { overflow-x: clip; }
+.m-only { display: none; }
+@media (max-width: 640px) {
+  .m-only { display: inline; }
+  .m-hide { display: none !important; }
+  .topbar .container { height: auto; min-height: 38px; padding-top: 7px; padding-bottom: 7px; justify-content: center; flex-wrap: wrap; gap: 4px 16px; }
+  .topbar ul { gap: 16px; flex-wrap: wrap; justify-content: center; }
+  .topbar li { white-space: normal; text-align: center; }
+  .topbar ul.topbar-left li:nth-child(1) { display: none; }
+  .topbar ul.topbar-right { display: flex; }
+  .topbar ul.topbar-right li:nth-child(2) { display: none; }
+  .hero-kicker { white-space: normal; line-height: 1.4; font-size: .8rem; padding: .45rem .8rem .45rem .55rem; }
+  .hero h1 { max-width: none; font-size: clamp(2rem, 9.2vw, 2.6rem); }
+  .hero-lead { font-size: 1.05rem; }
+  .hero-proof { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 16px; padding-top: 20px; }
+  .hero-proof li { font-size: .84rem; }
+  .hero-proof li:first-child { grid-column: 1 / -1; }
+  .card { padding: 22px; }
+  .problem { padding: 20px; }
+  .bench-card { padding: 22px; border-radius: 16px; }
+  .cta-panel { padding: 32px 22px; border-radius: 16px; }
+  .cta-actions .btn { flex: 1 1 auto; }
+  .page-head { padding: 44px 0 40px; }
+  .page-head h1 { font-size: clamp(1.8rem, 8vw, 2.3rem); }
+  .page-head .page-head-actions .btn { flex: 1 1 auto; }
+  .section-head { margin-bottom: 32px; }
+  .steps.vertical .step { padding: 20px; }
+  .service-intro .side-card, .contact-card { padding: 22px; }
+  .service-cta { padding: 24px 20px; }
+  .g-summary { padding: 14px 16px; gap: 12px; }
+  .reviews-head { margin-bottom: 24px; }
+  .review-card { padding: 18px; }
+  .faq details { padding: 0 16px; }
+  .faq summary { padding: 15px 0; font-size: .98rem; }
+  .btn-lg { padding: .9rem 1.2rem; font-size: 1rem; }
+  .field input, .field select, .field textarea { font-size: 16px; }
+  .choice-cards label { padding: 14px; }
+  .anpc-badge { white-space: normal; }
+  .footer-top { padding: 48px 0 32px; gap: 30px; }
+  .footer-legal .container { gap: 14px; }
+  .map-frame, .map-frame iframe { min-height: 320px; }
+  .about-media { aspect-ratio: 4 / 3; }
+  .about-media .float-card { left: 14px; bottom: 14px; padding: 12px 14px; }
+  .county-grid span, .chip { font-size: .8rem; }
+  .legal-body h3 { margin-top: 1.5rem; }
+}

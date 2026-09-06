@@ -21,6 +21,8 @@
     toggle.setAttribute('aria-label', 'Deschide meniul');
   }
   toggle.addEventListener('click', function () {
+    /* panoul mobil începe exact sub header, indiferent de înălțimea topbar-ului */
+    nav.style.top = Math.round(header.getBoundingClientRect().bottom) + 'px';
     var open = document.body.classList.toggle('nav-open');
     toggle.setAttribute('aria-expanded', String(open));
     toggle.setAttribute('aria-label', open ? 'Închide meniul' : 'Deschide meniul');
