@@ -1,0 +1,1665 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>R89 Repairs – Reparații laptopuri și console la nivel de placă de bază | Arad</title>
+<meta name="description" content="Service specializat în reparații laptopuri, MacBook, PlayStation și Xbox la nivel de placă de bază. Atelier în Arad, preluare prin curier din toată România. Peste 17 ani de experiență.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     SPRITE ICONIȚE (inline SVG, refolosite cu <use href="#i-...">)
+     La PHP: se mută în partials/icons.php și se include în header.
+     ============================================================ -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-laptop" viewBox="0 0 24 24"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"/></symbol>
+  <symbol id="i-macbook" viewBox="0 0 24 24"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"/><path d="M12 8.5c.8-.9 2-.7 2.3.2-.9.4-1.4 1.6-.6 2.6.5.5 1.1.5 1.4.5-.3.8-.9 1.7-1.6 1.7-.5 0-.6-.3-1.2-.3s-.8.3-1.3.3c-.7 0-1.5-1-1.8-1.9-.6-1.6.2-3 1.3-3.1.6 0 .9.4 1.5.4"/></symbol>
+  <symbol id="i-gamepad" viewBox="0 0 24 24"><line x1="6" x2="10" y1="11" y2="11"/><line x1="8" x2="8" y1="9" y2="13"/><line x1="15" x2="15.01" y1="12" y2="12"/><line x1="18" x2="18.01" y1="10" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></symbol>
+  <symbol id="i-console" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="12" cy="12" r="3.5"/><path d="M12 8.5v7M8.5 12h7"/><path d="M7 7.5h.01M17 7.5h.01"/></symbol>
+  <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+  <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+  <symbol id="i-package" viewBox="0 0 24 24"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></symbol>
+  <symbol id="i-microscope" viewBox="0 0 24 24"><path d="M6 18h8"/><path d="M3 22h18"/><path d="M14 22a7 7 0 1 0 0-14h-1"/><path d="M9 14h2"/><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"/><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/></symbol>
+  <symbol id="i-monitor" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></symbol>
+  <symbol id="i-monitor-off" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/><path d="m8 7 8 6M16 7l-8 6"/></symbol>
+  <symbol id="i-thermo" viewBox="0 0 24 24"><path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/></symbol>
+  <symbol id="i-plug" viewBox="0 0 24 24"><path d="M12 22v-5"/><path d="M9 8V2"/><path d="M15 8V2"/><path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/></symbol>
+  <symbol id="i-hdmi" viewBox="0 0 24 24"><path d="M3 9h18v5l-2 2H5l-2-2z"/><path d="M7 11.5h10"/><path d="M9 16v2h6v-2"/></symbol>
+  <symbol id="i-disc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="2"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></symbol>
+  <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M12 20h.01"/><path d="M2 8.82a15 15 0 0 1 20 0"/><path d="M5 12.859a10 10 0 0 1 14 0"/><path d="M8.5 16.429a5 5 0 0 1 7 0"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+  <symbol id="i-keyboard" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="M6 8h.01"/><path d="M10 8h.01"/><path d="M14 8h.01"/><path d="M18 8h.01"/><path d="M8 12h.01"/><path d="M12 12h.01"/><path d="M16 12h.01"/><path d="M7 16h10"/></symbol>
+  <symbol id="i-battery" viewBox="0 0 24 24"><rect width="16" height="10" x="2" y="7" rx="2" ry="2"/><line x1="22" x2="22" y1="11" y2="13"/><path d="M6 11v2M10 11v2"/></symbol>
+  <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></symbol>
+  <symbol id="i-store" viewBox="0 0 24 24"><path d="m2 7 1.7-4.3A1 1 0 0 1 4.6 2h14.8a1 1 0 0 1 .9.7L22 7"/><path d="M2 7h20v3a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0V7Z"/><path d="M4 13v9h16v-9"/><path d="M9 22v-6h6v6"/></symbol>
+  <symbol id="i-school" viewBox="0 0 24 24"><path d="M14 22v-4a2 2 0 1 0-4 0v4"/><path d="m18 10 4 2v10H2V12l4-2"/><path d="M18 5v17"/><path d="m4 6 8-4 8 4"/><path d="M6 5v17"/><circle cx="12" cy="9" r="2"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></symbol>
+  <symbol id="i-google" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.49 12.27c0-.79-.07-1.54-.19-2.27H12v4.51h6.47c-.29 1.48-1.14 2.73-2.4 3.58v3h3.86c2.26-2.09 3.56-5.17 3.56-8.82z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.86-3c-1.08.72-2.45 1.16-4.07 1.16-3.13 0-5.78-2.11-6.73-4.96H1.29v3.09C3.26 21.3 7.31 24 12 24z"/><path fill="#FBBC05" d="M5.27 14.29c-.25-.72-.38-1.49-.38-2.29s.14-1.57.38-2.29V6.62H1.29C.47 8.24 0 10.06 0 12s.47 3.76 1.29 5.38l3.98-3.09z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.26 2.7 1.29 6.62l3.98 3.09c.95-2.85 3.6-4.96 6.73-4.96z"/></symbol>
+</svg>
+
+<!-- ============================================================
+     HEADER (comun tuturor paginilor) -> partials/header.php
+     ============================================================ -->
+<div class="topbar">
+  <div class="container">
+    <ul class="topbar-left">
+      <li><svg class="icon"><use href="#i-clock"/></svg> Luni – Sâmbătă, 09:00 – 20:00</li>
+      <li><svg class="icon"><use href="#i-pin"/></svg> Str. Stupilor nr. 6, Arad</li>
+      <li class="badge-ro"><svg class="icon"><use href="#i-truck"/></svg> Preluăm reparații prin curier din toată România</li>
+    </ul>
+    <ul class="topbar-right">
+      <li><svg class="icon"><use href="#i-phone"/></svg> <a href="tel:+40775515613">+40 775 515 613</a></li>
+      <li><svg class="icon"><use href="#i-mail"/></svg> <a href="mailto:contact@r89-repairs.ro">contact@r89-repairs.ro</a></li>
+    </ul>
+  </div>
+</div>
+
+<header class="site-header" id="top">
+  <div class="container nav-wrap">
+    <a class="brand" href="#acasa" aria-label="R89 Repairs, pagina principală">
+      <span class="brand-mark"><span>R89</span></span>
+      <span class="brand-text"><b>R89 Repairs</b><small>Service electronic · Arad</small></span>
+    </a>
+
+    <nav aria-label="Navigație principală">
+      <ul class="main-nav" id="main-nav">
+        <li><a href="#despre-noi">Despre noi</a></li>
+        <li class="has-dropdown">
+          <a href="#servicii" aria-haspopup="true" aria-expanded="false">Servicii <svg class="icon"><use href="#i-chevron"/></svg></a>
+          <div class="dropdown">
+            <div class="dropdown-grid">
+              <a class="dropdown-item" href="#servicii-laptopuri">
+                <span class="di-icon"><svg class="icon"><use href="#i-laptop"/></svg></span>
+                <span><b>Laptopuri</b><span>Nu pornește, daune lichide, fără imagine, display spart</span></span>
+              </a>
+              <a class="dropdown-item" href="#servicii-macbook">
+                <span class="di-icon"><svg class="icon"><use href="#i-macbook"/></svg></span>
+                <span><b>MacBook Pro / Air</b><span>Placă logică, contact cu lichide, backlight, tastatură</span></span>
+              </a>
+              <a class="dropdown-item" href="#servicii-playstation">
+                <span class="di-icon"><svg class="icon"><use href="#i-gamepad"/></svg></span>
+                <span><b>PlayStation</b><span>Nu pornește, fără imagine, mufă HDMI, erori în joc</span></span>
+              </a>
+              <a class="dropdown-item" href="#servicii-xbox">
+                <span class="di-icon"><svg class="icon"><use href="#i-console"/></svg></span>
+                <span><b>Xbox</b><span>Se stinge singur, fără semnal HDMI, erori de sistem</span></span>
+              </a>
+            </div>
+            <div class="dropdown-foot">
+              <span>Reparații la nivel de componentă, cu diagnostic înainte de ofertă.</span>
+              <a class="link-arrow" href="#servicii">Toate serviciile <svg class="icon"><use href="#i-arrow"/></svg></a>
+            </div>
+          </div>
+        </li>
+        <li><a href="#reparatii-prin-curier">Reparații prin curier</a></li>
+        <li><a href="#colaborari-b2b">Colaborări B2B</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="nav-cta"><a class="btn btn-primary" href="#solicita-reparatie">Solicită reparație</a></li>
+      </ul>
+    </nav>
+
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Deschide meniul">
+      <svg class="icon i-menu"><use href="#i-menu"/></svg>
+      <svg class="icon i-close"><use href="#i-close"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================================================
+     PAGINA: Acasă  ->  index.php  (URL: /)
+     ============================================================ -->
+<section class="page" id="acasa">
+
+  <div class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-kicker"><span class="dot"></span> Service electronic specializat · Arad · peste 17 ani de experiență</span>
+        <h1>Reparații laptopuri și console <span class="accent">la nivel de placă de bază</span></h1>
+        <p class="hero-lead">Nu înlocuim placa la primul semn de defect. O punem sub microscop, găsim componenta care a cedat și o reparăm. Laptopuri PC, MacBook, PlayStation și Xbox, în atelierul din Arad sau prin curier, din orice județ.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#solicita-reparatie">Solicită reparație</a>
+          <a class="btn btn-wa btn-lg" href="https://wa.me/40775515613" target="_blank" rel="noopener"><svg class="icon icon-fill"><use href="#i-whatsapp"/></svg> WhatsApp</a>
+          <a class="btn btn-ghost-light btn-lg" href="#contact">Contactează-ne</a>
+        </div>
+        <ul class="hero-proof">
+          <li><span class="stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span> <b>5.0</b> pe Google · 33 recenzii</li>
+          <li><svg class="icon"><use href="#i-cpu"/></svg> Reparații la nivel de componentă</li>
+          <li><svg class="icon"><use href="#i-truck"/></svg> Curier din toată România</li>
+          <li><svg class="icon"><use href="#i-shield"/></svg> Garanție pentru lucrare</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="container">
+      <div class="stat"><svg class="icon"><use href="#i-award"/></svg><div><b>17+ ani</b><span>de experiență în reparații electronice</span></div></div>
+      <div class="stat"><svg class="icon"><use href="#i-microscope"/></svg><div><b>Microsudură</b><span>SMD, BGA, refacere trasee, scheme electrice</span></div></div>
+      <div class="stat"><svg class="icon"><use href="#i-search"/></svg><div><b>Diagnostic întâi</b><span>ofertă fermă înainte de orice intervenție</span></div></div>
+      <div class="stat"><svg class="icon"><use href="#i-truck"/></svg><div><b>Toată România</b><span>preluare și retur prin curier, în orice județ</span></div></div>
+    </div>
+  </div>
+
+  <!-- Ce reparăm -->
+  <div class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Ce reparăm</span>
+        <h2>Patru categorii de echipamente. Le cunoaștem în profunzime.</h2>
+        <p>Ne ocupăm exclusiv de laptopuri și console. Fără telefoane, fără televizoare: doar echipamentele pe care le putem repara până la ultima componentă.</p>
+      </div>
+      <div class="equip-grid">
+        <a class="card equip-card" href="#servicii-laptopuri">
+          <div class="equip-media"><img src="img/laptop.jpg" alt="Laptop deschis pe birou"><span class="tag">Laptopuri</span></div>
+          <div class="equip-body">
+            <h3>Laptopuri PC</h3>
+            <p class="equip-sub">Dell, HP, Lenovo, ASUS, Acer, MSI și altele</p>
+            <ul><li>Nu pornește sau nu încarcă</li><li>Daune provocate de lichide</li><li>Fără imagine, ecran negru</li><li>Display spart sau cu dungi</li></ul>
+            <span class="link-arrow">Vezi serviciile <svg class="icon"><use href="#i-arrow"/></svg></span>
+          </div>
+        </a>
+        <a class="card equip-card" href="#servicii-macbook">
+          <div class="equip-media"><img src="img/macbook.jpg" alt="MacBook Pro deschis"><span class="tag">Apple</span></div>
+          <div class="equip-body">
+            <h3>MacBook Pro / Air</h3>
+            <p class="equip-sub">Intel și Apple Silicon (M1 – M4)</p>
+            <ul><li>Placă logică: nu pornește, nu încarcă</li><li>Contact cu lichide, corodare</li><li>Fără imagine sau backlight</li><li>Tastatură, trackpad, display</li></ul>
+            <span class="link-arrow">Vezi serviciile <svg class="icon"><use href="#i-arrow"/></svg></span>
+          </div>
+        </a>
+        <a class="card equip-card" href="#servicii-playstation">
+          <div class="equip-media"><img src="img/playstation.jpg" alt="Consolă PlayStation 5"><span class="tag">Sony</span></div>
+          <div class="equip-body">
+            <h3>PlayStation</h3>
+            <p class="equip-sub">PS4, PS4 Pro, PS5, PS5 Slim și Pro</p>
+            <ul><li>Nu pornește (no power)</li><li>Pornește fără imagine</li><li>Mufă HDMI deteriorată</li><li>Erori sau blocaje în timpul jocului</li></ul>
+            <span class="link-arrow">Vezi serviciile <svg class="icon"><use href="#i-arrow"/></svg></span>
+          </div>
+        </a>
+        <a class="card equip-card" href="#servicii-xbox">
+          <div class="equip-media"><img src="img/xbox.jpg" alt="Consolă Xbox Series X cu controller"><span class="tag">Microsoft</span></div>
+          <div class="equip-body">
+            <h3>Xbox</h3>
+            <p class="equip-sub">One, One S, One X, Series S, Series X</p>
+            <ul><li>Se aprinde și se stinge imediat</li><li>Fără semnal HDMI, port rupt</li><li>Erori de sistem la pornire</li><li>Supraîncălzire, se oprește în joc</li></ul>
+            <span class="link-arrow">Vezi serviciile <svg class="icon"><use href="#i-arrow"/></svg></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Diferențiator: nivel de componentă -->
+  <div class="section section-alt">
+    <div class="container split">
+      <div>
+        <div class="section-head">
+          <span class="eyebrow">Reparații la nivel de componentă</span>
+          <h2>Placa de bază se repară. Nu se aruncă.</h2>
+          <p>Multe service-uri se opresc la nivel de modul: dacă placa nu pornește, propun înlocuirea ei, la un preț care de multe ori depășește valoarea echipamentului. Noi lucrăm un nivel mai jos.</p>
+        </div>
+        <p>Cu scheme electrice, microscop și stație de lipit cu aer cald, identificăm exact componenta care a cedat (un circuit de alimentare, un mosfet, un controller de încărcare, un chip HDMI) și o înlocuim. Placa rămâne a ta, datele rămân pe loc, iar costul este, de regulă, o fracțiune din prețul unei plăci noi.</p>
+        <ul class="check-list mt-24">
+          <li><strong>Datele rămân intacte.</strong> Nu se pierd odată cu placa înlocuită.</li>
+          <li><strong>Cost sub prețul unei plăci noi.</strong> Plătești componenta și manopera, nu un modul întreg.</li>
+          <li><strong>Soluție și pentru modele fără piese la producător.</strong> Console și laptopuri mai vechi, plăci care nu se mai fabrică.</li>
+          <li><strong>Testare sub sarcină înainte de predare.</strong> Nu „pornește”, ci funcționează.</li>
+        </ul>
+        <div class="mt-40"><a class="btn btn-blue" href="#despre-noi">Cum lucrăm în atelier</a></div>
+      </div>
+      <div class="bench-card">
+        <h3>Cum arată o reparație la nivel de componentă</h3>
+        <div class="bench-row">
+          <div class="bench-box"><small>Simptom</small><b>Laptopul nu pornește</b><span>LED-ul de încărcare clipește, fără reacție la buton.</span></div>
+          <div class="bench-box hl"><small>Diagnostic</small><b>Scurt pe linia de 3,3 V</b><span>Condensator ceramic străpuns, localizat cu camera termică.</span></div>
+          <div class="bench-box"><small>Intervenție</small><b>Înlocuire la microscop</b><span>Componentă SMD schimbată, linia verificată cu osciloscopul.</span></div>
+          <div class="bench-box"><small>Rezultat</small><b>Laptop funcțional</b><span>Date intacte, testat sub sarcină, garanție pentru lucrare.</span></div>
+        </div>
+        <div class="bench-tools">
+          <span>Microscop trinocular</span><span>Stație aer cald</span><span>Preheater</span><span>Cameră termică</span><span>Osciloscop</span><span>Sursă de laborator</span><span>Scheme &amp; boardview</span><span>Stație BGA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Proces -->
+  <div class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Cum decurge o reparație</span>
+        <h2>Patru pași, fără surprize la final.</h2>
+        <p>Același proces indiferent dacă aduci echipamentul personal în Arad sau îl trimiți prin curier.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><h3>Ne descrii problema</h3><p>Prin formular, telefon sau WhatsApp. Ne spui modelul și ce ai observat: nu pornește, s-a udat, nu are imagine.</p></div>
+        <div class="step"><h3>Diagnostic în atelier</h3><p>Verificăm echipamentul și identificăm cauza reală, nu doar simptomul. Îți explicăm ce am găsit.</p></div>
+        <div class="step"><h3>Ofertă și acordul tău</h3><p>Primești prețul și timpul estimat înainte de orice lucrare. Intervenim numai după ce confirmi.</p></div>
+        <div class="step"><h3>Reparație, testare, retur</h3><p>Reparăm, testăm sub sarcină, apoi predăm în Arad sau expediem prin curier, ambalat corespunzător.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bandă curier -->
+  <div class="section courier-band">
+    <div class="container">
+      <div>
+        <span class="eyebrow on-dark">Reparații prin curier</span>
+        <h2>Trimiți din orice colț al României. Reparăm în Arad.</h2>
+        <p class="lead">Nu contează dacă ești în Timișoara, Cluj, București sau într-o localitate fără service în apropiere. Chemăm curierul la adresa ta, iar echipamentul se întoarce testat și ambalat corespunzător.</p>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="#reparatii-prin-curier">Cum funcționează</a>
+          <a class="btn btn-ghost-light" href="#solicita-reparatie">Solicită reparație</a>
+        </div>
+      </div>
+      <ul class="courier-points">
+        <li><svg class="icon"><use href="#i-truck"/></svg><div><b>Curier la ușa ta</b><span>Comandăm noi ridicarea coletului. Tu doar ambalezi echipamentul.</span></div></li>
+        <li><svg class="icon"><use href="#i-camera"/></svg><div><b>Colet fotografiat la sosire</b><span>Starea echipamentului este documentată înainte și după intervenție.</span></div></li>
+        <li><svg class="icon"><use href="#i-file"/></svg><div><b>Ofertă înainte de orice lucrare</b><span>Dacă nu accepți oferta, echipamentul se întoarce la tine.</span></div></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Recenzii Google -->
+  <div class="section section-alt" id="recenzii">
+    <div class="container">
+      <div class="reviews-head">
+        <div class="section-head" style="margin-bottom:0">
+          <span class="eyebrow">Recenzii Google</span>
+          <h2>Ce spun clienții după reparație</h2>
+          <p>Recenzii publicate pe fișa Google a service-ului, R89 Electronics, Arad.</p>
+        </div>
+        <div class="g-summary">
+          <svg class="g-logo"><use href="#i-google"/></svg>
+          <div>
+            <b>R89 Electronics</b>
+            <div class="g-score"><strong>5.0</strong>
+              <span class="stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span>
+              <span>33 de recenzii</span>
+            </div>
+          </div>
+          <a class="btn btn-outline btn-sm" href="https://maps.google.com/?cid=10274317354018845011" target="_blank" rel="noopener">Vezi pe Google</a>
+        </div>
+      </div>
+
+      <div class="review-grid">
+        <article class="review-card">
+          <div class="review-top">
+            <div class="review-avatar"><img src="img/reviews/norbert-balaban.jpg" alt=""></div>
+            <div class="review-who"><b>Norbert Balaban</b><span>acum 4 luni</span></div>
+            <svg class="g-logo"><use href="#i-google"/></svg>
+          </div>
+          <div class="stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></div>
+          <p>Am dus un laptop pe care l-am prăjit eu din prostie, încercând să înlocuiesc un ecran fără să deconectez bateria. S-a făcut corect constatarea, a fost înlocuit cipul iar acum laptopul e ca nou. Prețuri corecte. Recomand!</p>
+          <div class="review-foot"><span>Laptop · reparație placă de bază</span><span>Publicat pe Google</span></div>
+        </article>
+        <article class="review-card">
+          <div class="review-top">
+            <div class="review-avatar"><img src="img/reviews/marius-filo.jpg" alt=""></div>
+            <div class="review-who"><b>Marius Filo</b><span>acum 3 luni</span></div>
+            <svg class="g-logo"><use href="#i-google"/></svg>
+          </div>
+          <div class="stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></div>
+          <p>Am avut surpriza ca din laptopul meu sa „iasa fumul magic”. L-am dus la R89 Electronics, a doua zi era deja reparat, mentenanta facuta (suflat de praf, schimbat pasta la microprocesor). Tarif superacceptabil, seriozitate maxima. Recomand!</p>
+          <div class="review-foot"><span>Laptop · alimentare</span><span>Publicat pe Google</span></div>
+        </article>
+        <article class="review-card">
+          <div class="review-top">
+            <div class="review-avatar"><img src="img/reviews/jean-marc.jpg" alt=""></div>
+            <div class="review-who"><b>Jean Marc</b><span>acum 8 luni</span></div>
+            <svg class="g-logo"><use href="#i-google"/></svg>
+          </div>
+          <div class="stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></div>
+          <p>Am avut o problema cu laptopul, care fiind destul de vechi, nu mai pornea. Am trimis laptopul, am primit evaluarea prompt, si problema a fost remediata in scurt timp. Foarte multumit de servicii si de atitudinea corecta a baietilor de la R89.</p>
+          <div class="review-foot"><span>Laptop · trimis prin curier</span><span>Publicat pe Google</span></div>
+        </article>
+        <article class="review-card">
+          <div class="review-top">
+            <div class="review-avatar"><img src="img/reviews/maria-pantea.jpg" alt=""></div>
+            <div class="review-who"><b>Maria Pantea</b><span>acum 2 luni</span></div>
+            <svg class="g-logo"><use href="#i-google"/></svg>
+          </div>
+          <div class="stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></div>
+          <p>O persoană pricepută care poate rezolva multe probleme pe care alții nu reușesc. Îl recomand cu plăcere!</p>
+          <div class="review-foot"><span>Recenzie verificată</span><span>Publicat pe Google</span></div>
+        </article>
+        <article class="review-card">
+          <div class="review-top">
+            <div class="review-avatar"><img src="img/reviews/narcisa-bistrian.jpg" alt=""></div>
+            <div class="review-who"><b>Narcisa Bistrian</b><span>acum 2 luni</span></div>
+            <svg class="g-logo"><use href="#i-google"/></svg>
+          </div>
+          <div class="stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></div>
+          <p>Seriozitate, promptitudine! Recomand cu cea mai mare încredere!</p>
+          <div class="review-foot"><span>Recenzie verificată</span><span>Publicat pe Google</span></div>
+        </article>
+        <article class="review-card">
+          <div class="review-top">
+            <div class="review-avatar">R</div>
+            <div class="review-who"><b>Romina Bistrian</b><span>acum 10 luni</span></div>
+            <svg class="g-logo"><use href="#i-google"/></svg>
+          </div>
+          <div class="stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></div>
+          <p>Două firme mi-au spus că trebuie înlocuită placa de bază. În trei zile l-am primit înapoi funcțional. Recomand.</p>
+          <div class="review-foot"><span>Laptop · reparație placă de bază</span><span>Publicat pe Google</span></div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section">
+    <div class="container-narrow">
+      <div class="section-head center">
+        <span class="eyebrow">Întrebări frecvente</span>
+        <h2>Ce ne întreabă clienții înainte de a trimite echipamentul</h2>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>Cum se stabilește prețul reparației?</summary>
+          <p>Doar după diagnostic. Verificăm echipamentul, identificăm componentele necesare și disponibilitatea lor, apoi îți comunicăm o ofertă fermă. Lucrarea începe numai după ce o accepți. Nu dăm prețuri „la telefon” pentru defecte de placă de bază, pentru că același simptom poate avea cauze foarte diferite.</p>
+        </details>
+        <details>
+          <summary>Cât durează o reparație?</summary>
+          <p>Depinde de defect și de disponibilitatea componentelor. Multe intervenții de alimentare sau HDMI se finalizează în câteva zile lucrătoare. Pentru cazuri complexe (daune lichide extinse, reballing BGA) îți comunicăm termenul odată cu oferta.</p>
+        </details>
+        <details>
+          <summary>Oferiți garanție?</summary>
+          <p>Da, pentru lucrarea efectuată și pentru componentele înlocuite. Perioada depinde de tipul intervenției și este menționată pe fișa de service la predare.</p>
+        </details>
+        <details>
+          <summary>Îmi pierd datele de pe laptop?</summary>
+          <p>La o reparație de placă de bază, nu: stocarea (SSD/HDD) nu este afectată. La MacBook-urile cu SSD lipit pe placă, reparăm placa logică tocmai pentru a păstra datele. Recomandăm oricum o copie de siguranță ori de câte ori este posibil.</p>
+        </details>
+        <details>
+          <summary>Ce se întâmplă dacă echipamentul nu poate fi reparat?</summary>
+          <p>Îți spunem clar și explicăm de ce. Echipamentul se întoarce la tine, iar condițiile de retur (transport, eventuala taxă de diagnostic) ți le comunicăm de la început, înainte să expediezi.</p>
+        </details>
+        <details>
+          <summary>Folosiți piese originale?</summary>
+          <p>Folosim componente originale acolo unde sunt disponibile sau echivalente de calitate, testate. La nivel de placă, majoritatea componentelor (mosfet, controllere, condensatori, porturi HDMI) sunt piese standard de la producătorii de semiconductori, aceleași cu cele montate din fabrică.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+
+  <!-- Articole -->
+  <div class="section section-alt" id="articole">
+    <div class="container">
+      <div class="reviews-head">
+        <div class="section-head" style="margin-bottom:0">
+          <span class="eyebrow">Din atelier</span>
+          <h2>Articole și explicații tehnice</h2>
+        </div>
+        <a class="link-arrow" href="#articole">Toate articolele <svg class="icon"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="grid grid-3">
+        <article class="card post-card">
+          <div class="post-media"><img src="img/playstation.jpg" alt=""><span class="tag">PlayStation</span></div>
+          <div class="post-body"><time>12 noiembrie 2025</time><h3>De ce este PS5 atât de greu de reparat?</h3><p>O privire asupra arhitecturii PS5 și a motivelor pentru care intervențiile hardware cer experiență și echipamente dedicate.</p><a class="link-arrow" href="#articole">Citește articolul <svg class="icon"><use href="#i-arrow"/></svg></a></div>
+        </article>
+        <article class="card post-card">
+          <div class="post-media"><img src="img/laptop.jpg" alt=""><span class="tag">Laptopuri</span></div>
+          <div class="post-body"><time>27 noiembrie 2025</time><h3>Reparații laptop: de la alimentare până la placa de bază</h3><p>Ce verificăm la un laptop care nu pornește, de ce nu schimbăm piese „la ghici” și când merită reparația.</p><a class="link-arrow" href="#articole">Citește articolul <svg class="icon"><use href="#i-arrow"/></svg></a></div>
+        </article>
+        <article class="card post-card">
+          <div class="post-media"><img src="img/hero-motherboard.jpg" alt=""><span class="tag">Ghid</span></div>
+          <div class="post-body"><time>30 noiembrie 2025</time><h3>De ce contează un service profesionist pentru laptop, Xbox sau PlayStation</h3><p>Un diagnostic corect protejează echipamentul și reduce riscul unor intervenții inutile sau al unor piese schimbate degeaba.</p><a class="link-arrow" href="#articole">Citește articolul <svg class="icon"><use href="#i-arrow"/></svg></a></div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA final -->
+  <div class="section">
+    <div class="container">
+      <div class="cta-panel">
+        <div>
+          <span class="eyebrow on-dark">Ai un echipament defect?</span>
+          <h2>Descrie-ne problema. Îți spunem care e următorul pas.</h2>
+          <p>Completezi formularul în două minute, te contactăm pentru confirmare și, dacă nu ești din Arad, organizăm noi curierul.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary btn-lg" href="#solicita-reparatie">Solicită reparație</a>
+          <a class="btn btn-ghost-light btn-lg" href="tel:+40775515613"><svg class="icon"><use href="#i-phone"/></svg> +40 775 515 613</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============================================================
+     PAGINA: Despre noi  ->  despre-noi.php  (URL: /despre-noi)
+     ============================================================ -->
+<section class="page" id="despre-noi">
+  <div class="page-head">
+    <div class="container">
+      <ul class="breadcrumb"><li><a href="#acasa">Acasă</a></li><li>Despre noi</li></ul>
+      <h1>Un atelier de electronică, nu un ghișeu de schimbat piese.</h1>
+      <p class="lead">R89 Repairs este un service din Arad specializat în reparații la nivel de placă de bază pentru laptopuri, MacBook, PlayStation și Xbox. Peste 17 ani de defecte reale, rezolvate cu schemă, microscop și răbdare.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container split">
+      <div>
+        <span class="eyebrow">Povestea noastră</span>
+        <h2>Am început cu plăci pe care alții le declaraseră moarte.</h2>
+        <p>R89 Repairs a pornit de la bancul de lucru al unui tehnician care repara electronice cu mult înainte ca „la nivel de placă de bază” să devină un argument de marketing. Surse în comutație, plăci industriale, apoi laptopuri și console: în peste 17 ani, modul de lucru a rămas același. Măsori, înțelegi, apoi intervii.</p>
+        <p>Astăzi lucrăm din atelierul de pe Strada Stupilor nr. 6, în Arad, pentru clienți din oraș și pentru echipamente sosite prin curier din toată țara. Ne ocupăm exclusiv de laptopuri (PC și MacBook) și de console PlayStation și Xbox. Nu reparăm telefoane, televizoare sau electrocasnice: preferăm să fim foarte buni pe puține categorii decât să facem de toate.</p>
+        <p>Cea mai mare parte a echipamentelor care ajung la noi au trecut deja printr-un alt service, unde răspunsul a fost „trebuie schimbată placa”. De cele mai multe ori nu trebuie.</p>
+      </div>
+      <div class="about-media">
+        <img src="img/hero-motherboard.jpg" alt="Placă de bază sub lupă, în atelier">
+        <div class="float-card">
+          <svg class="icon"><use href="#i-award"/></svg>
+          <div><b>17+ ani</b><span>de experiență în reparații electronice</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Ce facem diferit</span>
+        <h2>Trei reguli pe care nu le negociem</h2>
+      </div>
+      <div class="values">
+        <div class="card">
+          <div class="card-icon"><svg class="icon"><use href="#i-search"/></svg></div>
+          <h3>Diagnostic înainte de orice</h3>
+          <p>Nu schimbăm piese la ghici. Identificăm cauza defectului cu instrumente de măsură, apoi îți explicăm ce am găsit și de ce a apărut.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon green"><svg class="icon"><use href="#i-file"/></svg></div>
+          <h3>Ofertă fermă, fără surprize</h3>
+          <p>Primești prețul și termenul înainte de intervenție. Dacă pe parcurs apare ceva neprevăzut, te sunăm înainte, nu după.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><svg class="icon"><use href="#i-shield"/></svg></div>
+          <h3>Testare reală înainte de retur</h3>
+          <p>Un laptop reparat rulează sub sarcină, o consolă reparată rulează un joc, nu doar meniul. Abia apoi pleacă din atelier, cu garanție.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Atelierul</span>
+        <h2>Echipamente pentru intervenții la nivel de componentă</h2>
+        <p>Fără ele, „reparație de placă de bază” înseamnă doar reflow cu aer cald și speranță. Cu ele, înseamnă măsurători, localizare precisă și înlocuire controlată.</p>
+      </div>
+      <div class="tool-list">
+        <div class="tool"><svg class="icon"><use href="#i-microscope"/></svg><div><b>Microscop trinocular</b><span>Pentru lucrul pe componente SMD de sub un milimetru și inspecția lipiturilor.</span></div></div>
+        <div class="tool"><svg class="icon"><use href="#i-thermo"/></svg><div><b>Stație de aer cald și preheater</b><span>Înlocuire controlată a componentelor, fără stres termic pe placă.</span></div></div>
+        <div class="tool"><svg class="icon"><use href="#i-camera"/></svg><div><b>Cameră termică</b><span>Localizarea scurtcircuitelor și a componentelor care se încălzesc anormal.</span></div></div>
+        <div class="tool"><svg class="icon"><use href="#i-zap"/></svg><div><b>Osciloscop și sursă de laborator</b><span>Măsurători pe liniile de alimentare, semnale și consum, cu limitare de curent.</span></div></div>
+        <div class="tool"><svg class="icon"><use href="#i-file"/></svg><div><b>Scheme electrice și boardview</b><span>Documentație pentru laptopuri, MacBook și console, ca să știm exact ce măsurăm.</span></div></div>
+        <div class="tool"><svg class="icon"><use href="#i-cpu"/></svg><div><b>Stație BGA</b><span>Reballing și înlocuire de chipuri cu bile (GPU, chipset, memorie, HDMI).</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-alt">
+    <div class="container split">
+      <div>
+        <span class="eyebrow">Parcurs</span>
+        <h2>De la surse și plăci industriale, la console de ultimă generație</h2>
+        <p class="muted">Specializarea pe laptopuri și console a venit natural: sunt echipamentele pentru care „schimbă placa” costă cel mai mult și pentru care reparația la nivel de componentă face cea mai mare diferență.</p>
+      </div>
+      <ul class="timeline">
+        <li><b>Începuturile</b><span>Reparații de electronică industrială, surse în comutație și plăci de comandă. Aici s-au format reflexele de măsurare.</span></li>
+        <li><b>Specializarea pe laptopuri</b><span>Microsudură SMD și BGA, scheme electrice, daune lichide. Primele plăci recuperate după ce fuseseră declarate nereparabile.</span></li>
+        <li><b>Console PlayStation și Xbox</b><span>Porturi HDMI, circuite de alimentare, chipuri HDMI și reballing pe generațiile PS4, PS5 și Xbox One / Series.</span></li>
+        <li><b>Astăzi</b><span>Atelier în Arad, clienți din toată România prin curier, 5.0 din 33 de recenzii pe Google.</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="cta-panel">
+        <div>
+          <span class="eyebrow on-dark">Vrei să vezi cum lucrăm?</span>
+          <h2>Vino la atelier sau trimite echipamentul prin curier.</h2>
+          <p>Strada Stupilor nr. 6, Arad. Luni – Sâmbătă, 09:00 – 20:00. Sau prin curier, din orice județ.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary btn-lg" href="#solicita-reparatie">Solicită reparație</a>
+          <a class="btn btn-ghost-light btn-lg" href="#contact">Contact și hartă</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGINA: Servicii (prezentare)  ->  servicii.php  (URL: /servicii)
+     ============================================================ -->
+<section class="page" id="servicii">
+  <div class="page-head">
+    <div class="container">
+      <ul class="breadcrumb"><li><a href="#acasa">Acasă</a></li><li>Servicii</li></ul>
+      <h1>Servicii de reparații la nivel de placă de bază</h1>
+      <p class="lead">Alege echipamentul și vezi problemele pe care le rezolvăm frecvent. Dacă defectul tău nu apare în listă, descrie-ni-l: lista e orientativă, diagnosticul e cel care contează.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="service-list-grid">
+        <div class="card">
+          <div class="card-icon"><svg class="icon"><use href="#i-laptop"/></svg></div>
+          <div>
+            <h3>Laptopuri PC</h3>
+            <p>Dell, HP, Lenovo, ASUS, Acer, MSI, gaming și business. Circuite de alimentare, daune lichide, fără imagine, display.</p>
+            <ul class="check-list"><li>Nu pornește, nu încarcă</li><li>Daune provocate de lichide</li><li>Fără imagine, artefacte, ecran negru</li><li>Display spart, supraîncălzire, mufă alimentare</li></ul>
+            <a class="link-arrow" href="#servicii-laptopuri">Reparații laptopuri <svg class="icon"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-icon"><svg class="icon"><use href="#i-macbook"/></svg></div>
+          <div>
+            <h3>MacBook Pro / Air</h3>
+            <p>Placă logică Intel și Apple Silicon. Alimentare, controllere USB-C, corodare după lichide, backlight, tastatură și trackpad.</p>
+            <ul class="check-list"><li>Nu pornește, nu încarcă</li><li>Contact cu lichide</li><li>Fără imagine sau backlight</li><li>Display, tastatură, recuperare date</li></ul>
+            <a class="link-arrow" href="#servicii-macbook">Reparații MacBook <svg class="icon"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-icon green"><svg class="icon"><use href="#i-gamepad"/></svg></div>
+          <div>
+            <h3>PlayStation</h3>
+            <p>PS4, PS4 Pro, PS5, PS5 Slim și Pro. Porturi HDMI, chip HDMI, surse, erori în joc, supraîncălzire, unitate optică.</p>
+            <ul class="check-list"><li>Nu pornește (no power)</li><li>Pornește fără imagine</li><li>Mufă HDMI deteriorată</li><li>Erori sau blocaje în timpul jocului</li></ul>
+            <a class="link-arrow" href="#servicii-playstation">Reparații PlayStation <svg class="icon"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-icon green"><svg class="icon"><use href="#i-console"/></svg></div>
+          <div>
+            <h3>Xbox</h3>
+            <p>Xbox One, One S, One X, Series S și Series X. Surse interne, HDMI, erori de sistem, supraîncălzire, module wireless.</p>
+            <ul class="check-list"><li>Se aprinde și se stinge imediat</li><li>Fără semnal HDMI, port rupt</li><li>Erori de sistem la pornire</li><li>Supraîncălzire, unitate optică, controller</li></ul>
+            <a class="link-arrow" href="#servicii-xbox">Reparații Xbox <svg class="icon"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-2 mt-40">
+        <div class="notice green">
+          <svg class="icon"><use href="#i-check-circle"/></svg>
+          <div><strong>Intervenții comune tuturor categoriilor:</strong> microsudură SMD, reballing BGA, refacere trasee PCB, remediere scurtcircuite, curățare după lichide, înlocuire porturi și conectori.</div>
+        </div>
+        <div class="notice">
+          <svg class="icon"><use href="#i-alert"/></svg>
+          <div><strong>Ce nu reparăm:</strong> telefoane, tablete, televizoare, electrocasnice sau PC-uri desktop. Dacă ai un astfel de echipament, te putem îndruma către un coleg de încredere.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGINA: Servicii / Laptopuri  ->  servicii/laptopuri.php
+     ============================================================ -->
+<section class="page" id="servicii-laptopuri">
+  <div class="page-head with-icon">
+    <div class="container">
+      <div>
+        <ul class="breadcrumb"><li><a href="#acasa">Acasă</a></li><li><a href="#servicii">Servicii</a></li><li>Laptopuri</li></ul>
+        <h1>Reparații laptopuri la nivel de placă de bază</h1>
+        <p class="lead">Dell, HP, Lenovo, ASUS, Acer, MSI și orice alt laptop PC. Reparăm circuitul de alimentare, recuperăm plăci udate, rezolvăm lipsa imaginii pe placă, nu prin înlocuire.</p>
+        <div class="page-head-actions">
+          <a class="btn btn-primary" href="#solicita-reparatie" data-equip="laptop">Solicită reparație</a>
+          <a class="btn btn-ghost-light" href="https://wa.me/40775515613" target="_blank" rel="noopener"><svg class="icon icon-fill"><use href="#i-whatsapp"/></svg> Scrie-ne pe WhatsApp</a>
+        </div>
+      </div>
+      <div class="head-icon"><svg class="icon"><use href="#i-laptop"/></svg></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container service-intro">
+      <div>
+        <span class="eyebrow">Laptopuri PC</span>
+        <h2>Când un laptop „nu mai pornește”, placa de bază este rareori moartă.</h2>
+        <p>În majoritatea cazurilor, defectul este o componentă: un mosfet străpuns pe circuitul de alimentare, un controller de încărcare, un condensator în scurt, o mufă cu lipiturile fisurate. Le identificăm cu schema electrică, camera termică și osciloscopul, apoi le înlocuim la microscop.</p>
+        <p>Lucrăm pe laptopuri de birou, ultrabook-uri și laptopuri de gaming cu placă video dedicată. Aducem placa în stare de funcționare și o testăm sub sarcină înainte de predare, ca să știi că nu doar „pornește”, ci și rezistă.</p>
+        <div class="chips mt-24">
+          <span class="chip">Dell</span><span class="chip">HP</span><span class="chip">Lenovo / ThinkPad</span><span class="chip">ASUS / ROG</span><span class="chip">Acer / Predator</span><span class="chip">MSI</span><span class="chip">Samsung</span><span class="chip">Toshiba</span><span class="chip">Huawei</span><span class="chip">Lenovo Legion</span>
+        </div>
+      </div>
+      <div class="side-card">
+        <h4>Ce verificăm la diagnostic</h4>
+        <ul class="check-list">
+          <li>Liniile de alimentare (19 V, 5 V, 3,3 V, 1,05 V) și consumul pe fiecare</li>
+          <li>Circuitul de încărcare și starea bateriei</li>
+          <li>Scurtcircuite pe placă, cu camera termică</li>
+          <li>Semnalele de pornire (EC, PCH, CPU), reset și clock</li>
+          <li>Memoria, stocarea și semnalul către display</li>
+          <li>Temperaturi, ventilator, pastă termică</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Probleme frecvente</span>
+        <h2>Ce reparăm cel mai des la laptopuri</h2>
+      </div>
+      <div class="problem-grid">
+        <div class="problem">
+          <div class="problem-top"><h3>Nu pornește deloc</h3><svg class="icon"><use href="#i-zap"/></svg></div>
+          <p>Fără LED, fără ventilator, nicio reacție la buton. De obicei circuitul de alimentare: mosfet, controller PWM, siguranță sau un scurt pe una din liniile principale.</p>
+          <div class="problem-fix"><b>Soluție:</b> reparăm circuitul de alimentare pe placă, fără înlocuirea plăcii.</div>
+        </div>
+        <div class="problem">
+          <div class="problem-top"><h3>Daune provocate de lichide</h3><svg class="icon"><use href="#i-drop"/></svg></div>
+          <p>Cafea, apă, suc. Corodarea începe în câteva ore și avansează în câteva zile. Cu cât ajunge mai repede la noi, cu atât șansele sunt mai bune. Nu îl porni ca să „vezi dacă merge”.</p>
+          <div class="problem-fix"><b>Soluție:</b> curățare, înlocuire componente corodate, refacere trasee.</div>
+        </div>
+        <div class="problem">
+          <div class="problem-top"><h3>Fără imagine (no image)</h3><svg class="icon"><use href="#i-monitor-off"/></svg></div>
+          <p>Pornește, ventilatorul merge, LED-urile sunt aprinse, dar ecranul rămâne negru și pe monitor extern. Cauze: chipset, GPU, memorie, linie de alimentare a display-ului sau cablul eDP.</p>
+          <div class="problem-fix"><b>Soluție:</b> diagnostic pe placă; nu schimbăm display-ul „la ghici”.</div>
+        </div>
+        <div class="problem">
+          <div class="problem-top"><h3>Display spart sau cu dungi</h3><svg class="icon"><use href="#i-monitor"/></svg></div>
+          <p>Sticlă crăpată, pete negre, linii verticale, pâlpâit sau imagine foarte întunecată. Uneori e panoul, alteori cablul sau circuitul de backlight de pe placă.</p>
+          <div class="problem-fix"><b>Soluție:</b> înlocuire panou compatibil sau reparare circuit backlight.</div>
+        </div>
+        <div class="problem">
+          <div class="problem-top"><h3>Se supraîncălzește și se oprește</h3><svg class="icon"><use href="#i-thermo"/></svg></div>
+          <p>Ventilator zgomotos, carcasă fierbinte, opriri bruște în joc sau la randare. Pastă termică uscată, praf, dar și circuite de alimentare GPU care lucrează la limită.</p>
+          <div class="problem-fix"><b>Soluție:</b> curățare, pastă termică, verificare senzori și alimentare GPU.</div>
+        </div>
+        <div class="problem">
+          <div class="problem-top"><h3>Nu încarcă, mufa „joacă”</h3><svg class="icon"><use href="#i-plug"/></svg></div>
+          <p>Bateria nu se încarcă, LED-ul clipește, trebuie să ții cablul într-o anumită poziție. Mufa DC sau USB-C cu lipituri fisurate, ori circuitul de încărcare defect.</p>
+          <div class="problem-fix"><b>Soluție:</b> înlocuire mufă DC / USB-C, reparare circuit de încărcare.</div>
+        </div>
+      </div>
+      <p class="muted mt-24">Rezolvăm și: tastatură sau touchpad neresponsiv, porturi USB defecte, laptop care nu vede bateria, ecran albastru repetat cauzat de hardware, upgrade SSD și memorie.</p>
+    </div>
+  </div>
+
+  <div class="section-sm">
+    <div class="container">
+      <div class="service-cta">
+        <div>
+          <h3>Laptopul tău are una dintre problemele de mai sus?</h3>
+          <p>Descrie-ne ce ai observat. Îți spunem care e următorul pas: îl aduci în Arad sau ți-l preluăm prin curier.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary btn-lg" href="#solicita-reparatie" data-equip="laptop">Solicită reparație</a>
+          <a class="btn btn-outline btn-lg" href="tel:+40775515613"><svg class="icon"><use href="#i-phone"/></svg> Sună-ne</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container-narrow">
+      <h2 class="text-center mb-24">Întrebări frecvente despre reparațiile de laptop</h2>
+      <div class="faq">
+        <details><summary>Merită reparat un laptop mai vechi de 5 ani?</summary><p>Adesea, da. O reparație de placă costă de obicei mult mai puțin decât un laptop nou echivalent, iar datele și configurația rămân neatinse. Îți spunem sincer, după diagnostic, dacă reparația se justifică.</p></details>
+        <details><summary>Am vărsat lichid pe laptop. Ce fac până ajunge la voi?</summary><p>Oprește-l imediat, scoate încărcătorul, nu-l mai porni și nu-l pune la uscat pe calorifer. Cu cât ajunge mai repede la curățare, cu atât corodarea face mai puțină pagubă.</p></details>
+        <details><summary>Trebuie să trimit și încărcătorul?</summary><p>Da, la laptopuri avem nevoie de încărcătorul original pentru diagnostic și testare. Nu trimite geanta, mouse-ul sau alte accesorii.</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGINA: Servicii / MacBook  ->  servicii/macbook.php
+     ============================================================ -->
+<section class="page" id="servicii-macbook">
+  <div class="page-head with-icon">
+    <div class="container">
+      <div>
+        <ul class="breadcrumb"><li><a href="#acasa">Acasă</a></li><li><a href="#servicii">Servicii</a></li><li>MacBook Pro / Air</li></ul>
+        <h1>Reparații MacBook Pro și MacBook Air</h1>
+        <p class="lead">Placă logică Intel și Apple Silicon (M1 – M4). Alimentare, controllere USB-C, corodare după lichide, backlight, tastatură. Reparăm placa, ca să păstrezi datele de pe SSD-ul lipit.</p>
+        <div class="page-head-actions">
+          <a class="btn btn-primary" href="#solicita-reparatie" data-equip="macbook">Solicită reparație</a>
+          <a class="btn btn-ghost-light" href="https://wa.me/40775515613" target="_blank" rel="noopener"><svg class="icon icon-fill"><use href="#i-whatsapp"/></svg> Scrie-ne pe WhatsApp</a>
+        </div>
+      </div>
+      <div class="head-icon"><svg class="icon"><use href="#i-macbook"/></svg></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container service-intro">
+      <div>
+        <span class="eyebrow">MacBook Pro / Air</span>
+        <h2>La MacBook, „schimbăm placa logică” înseamnă și „îți pierzi datele”.</h2>
+        <p>De la modelele Retina încoace, SSD-ul este lipit pe placa logică. Dacă placa e înlocuită, datele dispar odată cu ea. De aceea, la MacBook reparăm placa logică la nivel de componentă ori de câte ori este posibil: circuite de alimentare, controllere USB-C (CD3215 / CD3217), SMC, linii corodate după contactul cu lichide.</p>
+        <p>Lucrăm cu scheme și boardview pentru MacBook Air și MacBook Pro, pe generații Intel și Apple Silicon. Suntem un service independent, neafiliat Apple.</p>
+        <div class="chips mt-24">
+          <span class="chip">MacBook Air (Intel, M1 – M4)</span><span class="chip">MacBook Pro 13"</span><span class="chip">MacBook Pro 14" / 16"</span><span class="chip">MacBook Pro 15" Retina</span><span class="chip">Touch Bar</span><span class="chip">Apple Silicon M1 / M2 / M3 / M4</span>
+        </div>
+      </div>
+      <div class="side-card">
+        <h4>Ce verificăm la diagnostic</h4>
+        <ul class="check-list">
+          <li>Alimentarea pe USB-C / MagSafe și negocierea de putere</li>
+          <li>Controllerele USB-C, SMC și liniile PP3V3 / PP5V / PPBUS</li>
+          <li>Corodare și scurtcircuite pe placa logică</li>
+          <li>Backlight, semnal LCD, cablu display</li>
+          <li>Tastatură, trackpad, Touch Bar, Touch ID</li>
+          <li>Baterie, consum și temperaturi</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Probleme frecvente</span>
+        <h2>Ce reparăm cel mai des la MacBook</h2>
+      </div>
+      <div class="problem-grid">
+        <div class="problem">
+          <div class="problem-top"><h3>Nu pornește sau nu încarcă</h3><svg class="icon"><use href="#i-zap"/></svg></div>
+          <p>Nicio reacție la încărcător, fără sunet de pornire, sau încarcă doar pe un port. Frecvent: circuitele de alimentare, controllerele USB-C, SMC sau un scurt pe placa logică.</p>
+          <div class="problem-fix"><b>Soluție:</b> reparație placă logică la nivel de componentă.</div>
+        </div>
+        <div class="problem">
+          <div class="problem-top"><h3>Contact cu lichide</h3><svg class="icon"><use href="#i-drop"/></svg></div>
+          <p>La MacBook, lichidul ajunge rapid la placa logică și la tastatură. Corodarea pe liniile de alimentare oprește pornirea în câteva zile, chiar dacă la început „merge”.</p>
+          <div class="problem-fix"><b>Soluție:</b> curățare, înlocuire componente corodate, refacere trasee.</div>
+        </div>
+        <div class="problem">
+          <div class="problem-top"><h3>Fără imagine sau backlight</h3><svg class="icon"><use href="#i-monitor-off"/></svg></div>
+          <p>Pornește (se aude, tastatura se luminează, apare pe monitor extern), dar ecranul e negru sau foarte întunecat. Circuit de backlight, siguranță arsă, cablu display uzat.</p>
+          <div class="problem-fix"><b>Soluție:</b> reparare circuit backlight / LCD pe placă, verificare cablu display.</div>
+        </div>
+        <div class="problem">
+          <div class="problem-top"><h3>Display spart</h3><svg class="icon"><use href="#i-monitor"/></svg></div>
+          <p>Sticlă crăpată, pete, dungi colorate, imagine „scursă”. La MacBook display-ul se înlocuiește ca ansamblu, dar verificăm întâi că placa și cablul nu sunt afectate.</p>
+          <div class="problem-fix"><b>Soluție:</b> înlocuire display asamblat, verificare cablu și placă.</div>
+        </div>
+        <div class="problem">
+          <div class="problem-top"><h3>Tastatură, trackpad, Touch Bar</h3><svg class="icon"><use href="#i-keyboard"/></svg></div>
+          <p>Taste care nu răspund, trackpad care nu face click, Touch Bar stinsă, Touch ID care nu mai funcționează. Cabluri flex, conectori sau controllere pe placă.</p>
+          <div class="problem-fix"><b>Soluție:</b> reparare conector / cablu sau înlocuire modul.</div>
+        </div>
+        <div class="problem">
+          <div class="problem-top"><h3>Recuperare date de pe placă defectă</h3><svg class="icon"><use href="#i-database"/></svg></div>
+          <p>Placa nu mai pornește, dar ai nevoie de datele de pe SSD-ul lipit. Repunem placa logică în funcțiune suficient cât să salvăm datele, chiar dacă reparația completă nu se justifică.</p>
+          <div class="problem-fix"><b>Soluție:</b> reparație țintită pentru acces la date, apoi copiere.</div>
+        </div>
+      </div>
+      <p class="muted mt-24">Rezolvăm și: baterie umflată sau descărcare rapidă, ventilator la maxim în repaus, MacBook care se oprește la un anumit procent, porturi USB-C care nu mai văd perifericele.</p>
+    </div>
+  </div>
+
+  <div class="section-sm">
+    <div class="container">
+      <div class="service-cta">
+        <div>
+          <h3>MacBook-ul tău are una dintre problemele de mai sus?</h3>
+          <p>Spune-ne modelul (îl găsești pe spatele carcasei, sub „MacBook Pro/Air”) și ce ai observat. Revenim cu următorul pas.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary btn-lg" href="#solicita-reparatie" data-equip="macbook">Solicită reparație</a>
+          <a class="btn btn-outline btn-lg" href="tel:+40775515613"><svg class="icon"><use href="#i-phone"/></svg> Sună-ne</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container-narrow">
+      <h2 class="text-center mb-24">Întrebări frecvente despre reparațiile de MacBook</h2>
+      <div class="faq">
+        <details><summary>Apple mi-a spus că trebuie înlocuită placa logică. Voi ce puteți face?</summary><p>Service-urile autorizate lucrează la nivel de modul: înlocuiesc placa întreagă. Noi reparăm placa existentă la nivel de componentă. În multe cazuri defectul este un singur circuit, iar reparația costă considerabil mai puțin și păstrează datele.</p></details>
+        <details><summary>Îmi pierd datele?</summary><p>Nu, dacă reparăm placa logică existentă. Datele rămân pe SSD-ul lipit. Recomandăm totuși o copie de siguranță (Time Machine) imediat ce MacBook-ul revine la tine.</p></details>
+        <details><summary>Reparați și MacBook-uri cu cip Apple Silicon?</summary><p>Da. Lucrăm pe M1, M2, M3 și M4, atât Air cât și Pro. Diagnosticul urmează aceeași logică: linii de alimentare, controllere, corodare, display.</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGINA: Servicii / PlayStation  ->  servicii/playstation.php
+     ============================================================ -->
+<section class="page" id="servicii-playstation">
+  <div class="page-head with-icon">
+    <div class="container">
+      <div>
+        <ul class="breadcrumb"><li><a href="#acasa">Acasă</a></li><li><a href="#servicii">Servicii</a></li><li>PlayStation</li></ul>
+        <h1>Reparații PlayStation 4 și PlayStation 5</h1>
+        <p class="lead">Nu pornește, pornește fără imagine, mufă HDMI ruptă, erori în joc, supraîncălzire. Reparăm placa consolei prin microsudură, inclusiv porturile și chipurile HDMI.</p>
+        <div class="page-head-actions">
+          <a class="btn btn-primary" href="#solicita-reparatie" data-equip="playstation">Solicită reparație</a>
+          <a class="btn btn-ghost-light" href="https://wa.me/40775515613" target="_blank" rel="noopener"><svg class="icon icon-fill"><use href="#i-whatsapp"/></svg> Scrie-ne pe WhatsApp</a>
+        </div>
+      </div>
+      <div class="head-icon"><svg class="icon"><use href="#i-gamepad"/></svg></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container service-intro">
+      <div>
+        <span class="eyebrow">PlayStation</span>
+        <h2>Cele mai multe console „moarte” au un singur port sau un singur chip defect.</h2>
+        <p>Portul HDMI smuls din placă, chipul HDMI (retimer) străpuns de un cablu cu probleme, un mosfet pe circuitul de alimentare, lichidul metalic de la PS5 care a migrat: sunt defecte precise, cu soluții precise. Le identificăm cu schema în față și le reparăm la microscop.</p>
+        <p>Lucrăm pe toate generațiile PS4 și PS5. Consola pleacă din atelier după ce a rulat un joc, nu doar meniul.</p>
+        <div class="chips mt-24">
+          <span class="chip">PS4</span><span class="chip">PS4 Slim</span><span class="chip">PS4 Pro</span><span class="chip">PS5</span><span class="chip">PS5 Digital Edition</span><span class="chip">PS5 Slim</span><span class="chip">PS5 Pro</span><span class="chip">Controllere DualSense / DualShock</span>
+        </div>
+      </div>
+      <div class="side-card">
+        <h4>Ce verificăm la diagnostic</h4>
+        <ul class="check-list">
+          <li>Sursa internă și circuitul de alimentare de pe placă</li>
+          <li>Portul HDMI, chipul HDMI și liniile de semnal</li>
+          <li>Scurtcircuite și componente încălzite anormal</li>
+          <li>Memoria, SSD-ul și stabilitatea sub sarcină</li>
+          <li>Temperaturi, ventilator, pastă / lichid metalic</li>
+          <li>Unitatea optică, Wi-Fi și Bluetooth</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Probleme frecvente</span>
+        <h2>Ce reparăm cel mai des la PlayStation</h2>
+      </div>
+      <div class="problem-grid">
+        <div class="problem">
+          <div class="problem-top"><h3>Nu pornește (no power)</h3><svg class="icon"><use href="#i-zap"/></svg></div>
+          <p>Consola nu reacționează, sau pornește o secundă și se oprește cu trei bipuri. Sursă internă, circuit de alimentare de pe placă sau un scurt pe una din linii.</p>
+          <div class="problem-fix"><b>Soluție:</b> reparare sursă sau circuit de alimentare, la nivel de componentă.</div>
+        </div>
+        <div class="problem">
+          <div class="problem-top"><h3>Pornește fără imagine (no image)</h3><svg class="icon"><use href="#i-monitor-off"/></svg></div>
+          <p>LED-ul e alb, ventilatorul merge, dar televizorul spune „No signal”. De obicei portul HDMI, chipul HDMI sau o linie de alimentare a acestuia.</p>
+          <div class="problem-fix"><b>Soluție:</b> verificare port, înlocuire chip HDMI (retimer / encoder), reparare linii.</div>
+        </div>
+        <div class="problem">
+          <div class="problem-top"><h3>Mufă HDMI deteriorată</h3><svg class="icon"><use href="#i-hdmi"/></svg></div>
+          <p>Pini îndoiți, cablu scos cu forță, mufa „joacă” sau imaginea apare doar dacă ții cablul apăsat. Cea mai frecventă defecțiune la PS5 și PS4.</p>
+          <div class="problem-fix"><b>Soluție:</b> înlocuire port HDMI prin microsudură, verificare chip HDMI.</div>
+        </div>
+        <div class="problem">
+          <div class="problem-top"><h3>Erori și blocaje în timpul jocului</h3><svg class="icon"><use href="#i-alert"/></svg></div>
+          <p>Îngheață, repornește singură, erori CE-xxxxx, jocurile se închid. Poate fi memoria, SSD-ul, alimentarea GPU / CPU sau, la PS4, lipiturile BGA.</p>
+          <div class="problem-fix"><b>Soluție:</b> diagnostic pe placă, înlocuire componente, reballing la nevoie.</div>
+        </div>
+        <div class="problem">
+          <div class="problem-top"><h3>Supraîncălzire, ventilator zgomotos</h3><svg class="icon"><use href="#i-thermo"/></svg></div>
+          <p>Se oprește după câteva minute de joc, sună ca un avion. Praf, pastă termică uscată sau, la PS5, lichid metalic degradat ori migrat pe placă.</p>
+          <div class="problem-fix"><b>Soluție:</b> curățare completă, înlocuire pastă / lichid metalic, verificare senzori.</div>
+        </div>
+        <div class="problem">
+          <div class="problem-top"><h3>Nu citește discuri</h3><svg class="icon"><use href="#i-disc"/></svg></div>
+          <p>Scoate discul, face zgomot, nu recunoaște Blu-ray-urile sau nu trage discul înăuntru. Laser uzat, mecanism blocat sau placa unității optice.</p>
+          <div class="problem-fix"><b>Soluție:</b> reparare / înlocuire unitate optică, laser sau placă drive.</div>
+        </div>
+      </div>
+      <p class="muted mt-24">Rezolvăm și: controller DualSense cu stick drift sau port de încărcare defect, PS5 care nu se conectează la Wi-Fi, consolă blocată în safe mode, port USB defect.</p>
+    </div>
+  </div>
+
+  <div class="section-sm">
+    <div class="container">
+      <div class="service-cta">
+        <div>
+          <h3>Consola ta are una dintre problemele de mai sus?</h3>
+          <p>Spune-ne modelul și ce ai observat. Consola vine fără cabluri, controllere sau discuri, doar unitatea.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary btn-lg" href="#solicita-reparatie" data-equip="playstation">Solicită reparație</a>
+          <a class="btn btn-outline btn-lg" href="tel:+40775515613"><svg class="icon"><use href="#i-phone"/></svg> Sună-ne</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container-narrow">
+      <h2 class="text-center mb-24">Întrebări frecvente despre reparațiile de PlayStation</h2>
+      <div class="faq">
+        <details><summary>Am schimbat mufa HDMI în altă parte și tot nu am imagine. De ce?</summary><p>Pentru că, de multe ori, cablul defect a stricat și chipul HDMI de pe placă, nu doar mufa. Verificăm chipul și liniile lui de alimentare înainte de a înlocui portul, ca să nu plătești două intervenții.</p></details>
+        <details><summary>Consola mea e din garanție. O reparați?</summary><p>Dacă este încă în garanția producătorului, îți recomandăm să folosești garanția. Dacă a expirat sau garanția a fost refuzată (de exemplu, pentru contact cu lichide), o reparăm noi.</p></details>
+        <details><summary>Îmi pierd jocurile și salvările?</summary><p>La reparațiile de placă, nu. Stocarea nu este afectată. Dacă defectul este chiar SSD-ul, îți spunem înainte de intervenție.</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGINA: Servicii / Xbox  ->  servicii/xbox.php
+     ============================================================ -->
+<section class="page" id="servicii-xbox">
+  <div class="page-head with-icon">
+    <div class="container">
+      <div>
+        <ul class="breadcrumb"><li><a href="#acasa">Acasă</a></li><li><a href="#servicii">Servicii</a></li><li>Xbox</li></ul>
+        <h1>Reparații Xbox One și Xbox Series S / X</h1>
+        <p class="lead">Se aprinde și se stinge, fără semnal HDMI, erori de sistem la pornire, supraîncălzire, unitate optică. Surse interne și plăci reparate la nivel de componentă.</p>
+        <div class="page-head-actions">
+          <a class="btn btn-primary" href="#solicita-reparatie" data-equip="xbox">Solicită reparație</a>
+          <a class="btn btn-ghost-light" href="https://wa.me/40775515613" target="_blank" rel="noopener"><svg class="icon icon-fill"><use href="#i-whatsapp"/></svg> Scrie-ne pe WhatsApp</a>
+        </div>
+      </div>
+      <div class="head-icon"><svg class="icon"><use href="#i-console"/></svg></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container service-intro">
+      <div>
+        <span class="eyebrow">Xbox</span>
+        <h2>Sursa internă și HDMI-ul: de aici pornesc cele mai multe reparații de Xbox.</h2>
+        <p>Xbox One S, One X și Series X au sursa de alimentare în interior, iar ea este primul suspect când consola se stinge singură. Urmează portul HDMI și chipul retimer, apoi erorile de sistem care blochează pornirea. Pentru fiecare avem o procedură clară de diagnostic, iar reparația se face pe placă, nu prin înlocuirea ei.</p>
+        <p>Lucrăm pe toate modelele Xbox One și Xbox Series. Consola pleacă din atelier după testare într-un joc, cu temperaturi verificate.</p>
+        <div class="chips mt-24">
+          <span class="chip">Xbox One</span><span class="chip">Xbox One S</span><span class="chip">Xbox One X</span><span class="chip">Xbox Series S</span><span class="chip">Xbox Series X</span><span class="chip">Controllere Xbox</span>
+        </div>
+      </div>
+      <div class="side-card">
+        <h4>Ce verificăm la diagnostic</h4>
+        <ul class="check-list">
+          <li>Sursa internă și circuitele de alimentare de pe placă</li>
+          <li>Portul HDMI, chipul retimer și liniile de semnal</li>
+          <li>Erorile de sistem: stocare, memorie, software</li>
+          <li>Scurtcircuite și componente încălzite anormal</li>
+          <li>Temperaturi, ventilator, pastă termică</li>
+          <li>Modulul wireless, unitatea optică, porturi</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Probleme frecvente</span>
+        <h2>Ce reparăm cel mai des la Xbox</h2>
+      </div>
+      <div class="problem-grid">
+        <div class="problem">
+          <div class="problem-top"><h3>Se aprinde și se stinge imediat</h3><svg class="icon"><use href="#i-zap"/></svg></div>
+          <p>Butonul răspunde, apoi consola se oprește sau repornește în buclă. La One S / One X / Series X sursa internă este primul suspect, urmată de circuitul de alimentare de pe placă.</p>
+          <div class="problem-fix"><b>Soluție:</b> reparare sursă internă sau circuit de alimentare.</div>
+        </div>
+        <div class="problem">
+          <div class="problem-top"><h3>Fără semnal HDMI, port rupt</h3><svg class="icon"><use href="#i-hdmi"/></svg></div>
+          <p>Televizorul nu găsește semnal, mufa HDMI e slăbită sau a fost smulsă. Uneori portul, alteori chipul retimer de lângă el, deteriorat de un cablu cu probleme.</p>
+          <div class="problem-fix"><b>Soluție:</b> înlocuire port HDMI, verificare / înlocuire chip retimer.</div>
+        </div>
+        <div class="problem">
+          <div class="problem-top"><h3>Erori de sistem la pornire</h3><svg class="icon"><use href="#i-alert"/></svg></div>
+          <p>Consola rămâne pe ecranul de eroare (E100, E101, E102, E105, E200, E203) sau într-o buclă de actualizare. Poate fi stocarea, memoria sau doar sistemul.</p>
+          <div class="problem-fix"><b>Soluție:</b> diagnostic hardware vs. software, refacere sistem, înlocuire stocare defectă.</div>
+        </div>
+        <div class="problem">
+          <div class="problem-top"><h3>Se supraîncălzește, se oprește în joc</h3><svg class="icon"><use href="#i-thermo"/></svg></div>
+          <p>Ventilator zgomotos, carcasă fierbinte, mesaj de supraîncălzire. Praf, pastă termică uscată, radiator montat greșit după o intervenție anterioară.</p>
+          <div class="problem-fix"><b>Soluție:</b> curățare, înlocuire pastă termică, verificare senzori și ventilator.</div>
+        </div>
+        <div class="problem">
+          <div class="problem-top"><h3>Unitatea optică nu citește</h3><svg class="icon"><use href="#i-disc"/></svg></div>
+          <p>Discul este respins, „disc necunoscut”, zgomot mecanic sau discul nu este tras înăuntru. Laser, mecanism sau placa unității optice, care pe Xbox este împerecheată cu consola.</p>
+          <div class="problem-fix"><b>Soluție:</b> reparare unitate optică, cu păstrarea plăcii originale a drive-ului.</div>
+        </div>
+        <div class="problem">
+          <div class="problem-top"><h3>Controllerul nu se conectează, fără Wi-Fi</h3><svg class="icon"><use href="#i-wifi"/></svg></div>
+          <p>Controllerul se deconectează sau nu se mai împerechează, rețeaua Wi-Fi dispare. Modulul wireless sau antenele de pe placă.</p>
+          <div class="problem-fix"><b>Soluție:</b> reparare / înlocuire modul wireless, verificare antene.</div>
+        </div>
+      </div>
+      <p class="muted mt-24">Rezolvăm și: controller Xbox cu stick drift sau butoane care nu răspund, port USB defect, consolă care nu iese din modul de repaus, sunet lipsă pe HDMI.</p>
+    </div>
+  </div>
+
+  <div class="section-sm">
+    <div class="container">
+      <div class="service-cta">
+        <div>
+          <h3>Xbox-ul tău are una dintre problemele de mai sus?</h3>
+          <p>Spune-ne modelul și ce ai observat. Trimite doar consola, fără cabluri, controllere sau discuri.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary btn-lg" href="#solicita-reparatie" data-equip="xbox">Solicită reparație</a>
+          <a class="btn btn-outline btn-lg" href="tel:+40775515613"><svg class="icon"><use href="#i-phone"/></svg> Sună-ne</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container-narrow">
+      <h2 class="text-center mb-24">Întrebări frecvente despre reparațiile de Xbox</h2>
+      <div class="faq">
+        <details><summary>Xbox-ul se stinge după câteva secunde. E sursa?</summary><p>De cele mai multe ori, da, la modelele cu sursă internă. Dar același simptom apare și la un scurt pe placă. Verificăm sursa separat, apoi placa, ca să reparăm cauza reală.</p></details>
+        <details><summary>Pot schimba unitatea optică cu una de la altă consolă?</summary><p>Nu direct: placa unității optice este împerecheată cu placa de bază. Reparăm mecanismul sau laserul păstrând placa originală a drive-ului, ca să nu pierzi funcția de citire.</p></details>
+        <details><summary>Reparați și controllerele Xbox?</summary><p>Da: stick drift, butoane, port de încărcare, vibrație. Le trimiți împreună cu consola sau separat.</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGINA: Reparații prin curier  ->  reparatii-prin-curier.php
+     ============================================================ -->
+<section class="page" id="reparatii-prin-curier">
+  <div class="page-head with-icon">
+    <div class="container">
+      <div>
+        <ul class="breadcrumb"><li><a href="#acasa">Acasă</a></li><li>Reparații prin curier</li></ul>
+        <h1>Reparații prin curier, din toată România</h1>
+        <p class="lead">Nu trebuie să ajungi la Arad. Chemăm curierul la adresa ta, diagnosticăm în atelier, îți trimitem oferta și returnăm echipamentul testat. Același proces, aceeași garanție ca la predarea personală.</p>
+        <div class="page-head-actions">
+          <a class="btn btn-primary" href="#solicita-reparatie">Solicită reparație prin curier</a>
+          <a class="btn btn-ghost-light" href="https://wa.me/40775515613" target="_blank" rel="noopener"><svg class="icon icon-fill"><use href="#i-whatsapp"/></svg> Întreabă pe WhatsApp</a>
+        </div>
+      </div>
+      <div class="head-icon"><svg class="icon"><use href="#i-truck"/></svg></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container split">
+      <div>
+        <span class="eyebrow">Cum funcționează</span>
+        <h2>Un proces clar, de la expediere până la retur</h2>
+        <p class="muted">Peste jumătate din echipamentele care ajung în atelier vin prin curier. Am simplificat procesul cât s-a putut: tu ambalezi, noi ne ocupăm de rest.</p>
+        <div class="notice green mt-24">
+          <svg class="icon"><use href="#i-check-circle"/></svg>
+          <div><strong>Nu expedia înainte să te contactăm.</strong> După ce trimiți solicitarea, confirmăm telefonic detaliile și abia apoi comandăm curierul. Așa evităm colete rătăcite și echipamente pe care nu le putem repara.</div>
+        </div>
+      </div>
+      <div class="steps vertical">
+        <div class="step"><div><h3>Descrii defectul</h3><p>Completezi formularul cu echipamentul, modelul și simptomele. Sau ne scrii pe WhatsApp.</p></div></div>
+        <div class="step"><div><h3>Confirmăm și chemăm curierul</h3><p>Te sunăm, stabilim detaliile și comandăm noi ridicarea coletului de la adresa ta, de oriunde din România.</p></div></div>
+        <div class="step"><div><h3>Ambalezi și predai coletul</h3><p>Protejezi echipamentul conform ghidului de mai jos și îl predai curierului sau îl depui într-un locker, după instrucțiuni.</p></div></div>
+        <div class="step"><div><h3>Fotografiem, diagnosticăm, trimitem oferta</h3><p>La sosire fotografiem coletul și starea echipamentului. După diagnostic primești explicația defectului și oferta. Reparăm numai după acordul tău.</p></div></div>
+        <div class="step"><div><h3>Reparăm, testăm, returnăm</h3><p>După intervenție testăm echipamentul sub sarcină, îl fotografiem, îl ambalăm și îl expediem înapoi la tine.</p></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Ambalare corectă</span>
+        <h2>Cum împachetezi echipamentul ca să ajungă întreg</h2>
+      </div>
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="card-icon"><svg class="icon"><use href="#i-package"/></svg></div>
+          <h3>Cutie rigidă, mai mare decât echipamentul</h3>
+          <p>Lasă cel puțin 5 cm de material de protecție pe fiecare latură: folie cu bule, spumă sau hârtie mototolită. Echipamentul nu trebuie să se miște în cutie.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><svg class="icon"><use href="#i-laptop"/></svg></div>
+          <h3>La laptop: trimite și încărcătorul</h3>
+          <p>Avem nevoie de el pentru diagnostic și testare. Scoate laptopul din geantă, împachetează-l separat și nu pune obiecte grele peste el.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><svg class="icon"><use href="#i-gamepad"/></svg></div>
+          <h3>La consolă: doar unitatea</h3>
+          <p>Fără cabluri, controllere, discuri sau suport vertical. Scoate discul din unitate înainte de a ambala. Un disc uitat înăuntru se poate zgâria la transport.</p>
+        </div>
+      </div>
+      <div class="grid grid-3 mt-24">
+        <div class="card">
+          <div class="card-icon green"><svg class="icon"><use href="#i-file"/></svg></div>
+          <h3>Pune un bilet în colet</h3>
+          <p>Numele, telefonul și, pe scurt, defectul. Ne ajută să asociem imediat coletul cu solicitarea ta.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon green"><svg class="icon"><use href="#i-camera"/></svg></div>
+          <h3>Fotografiază înainte de expediere</h3>
+          <p>Câteva poze cu echipamentul și cu coletul închis. Noi fotografiem la sosire, tu la plecare: starea este documentată la ambele capete.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon green"><svg class="icon"><use href="#i-shield"/></svg></div>
+          <h3>Declară valoarea la curier</h3>
+          <p>Pentru echipamente scumpe, cere asigurarea coletului. Costul este mic în raport cu valoarea unui MacBook sau a unei console noi.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Costuri și condiții</span>
+        <h2>Ce trebuie să știi înainte să expediezi</h2>
+      </div>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Transportul</h3>
+          <p>Costul transportului dus-întors ți-l comunicăm la confirmarea solicitării, înainte de a chema curierul. Fără costuri ascunse la retur.</p>
+        </div>
+        <div class="card">
+          <h3>Diagnosticul și oferta</h3>
+          <p>După diagnostic îți explicăm defectul și îți trimitem oferta cu preț și termen. Intervenția începe numai după ce o accepți.</p>
+        </div>
+        <div class="card">
+          <h3>Dacă nu accepți oferta</h3>
+          <p>Echipamentul se întoarce la tine, în starea în care a sosit. Condițiile de retur le afli de la început, înainte să expediezi.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Acoperire națională</span>
+        <h2>Preluăm colete din toate județele</h2>
+        <p>Indiferent de localitate, curierul ajunge la tine. Cele mai multe echipamente ne vin din Timiș, Cluj, București, Bihor și Hunedoara, dar lista e completă.</p>
+      </div>
+      <div class="county-grid">
+        <span>Alba</span><span>Arad</span><span>Argeș</span><span>Bacău</span><span>Bihor</span><span>Bistrița-Năsăud</span><span>Botoșani</span><span>Brașov</span><span>Brăila</span><span>București</span><span>Buzău</span><span>Caraș-Severin</span><span>Călărași</span><span>Cluj</span><span>Constanța</span><span>Covasna</span><span>Dâmbovița</span><span>Dolj</span><span>Galați</span><span>Giurgiu</span><span>Gorj</span><span>Harghita</span><span>Hunedoara</span><span>Ialomița</span><span>Iași</span><span>Ilfov</span><span>Maramureș</span><span>Mehedinți</span><span>Mureș</span><span>Neamț</span><span>Olt</span><span>Prahova</span><span>Satu Mare</span><span>Sălaj</span><span>Sibiu</span><span>Suceava</span><span>Teleorman</span><span>Timiș</span><span>Tulcea</span><span>Vaslui</span><span>Vâlcea</span><span>Vrancea</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container-narrow">
+      <h2 class="text-center mb-24">Întrebări frecvente despre reparațiile prin curier</h2>
+      <div class="faq">
+        <details><summary>Cu ce curier lucrați?</summary><p>Cu firme de curierat naționale care ridică de la adresă și livrează în toată țara. Îți spunem la confirmare cine vine și în ce interval.</p></details>
+        <details><summary>Cât durează transportul?</summary><p>De regulă, o zi lucrătoare în fiecare sens, în funcție de localitate. Timpul de reparație se adaugă separat și ți-l comunicăm odată cu oferta.</p></details>
+        <details><summary>Cum plătesc?</summary><p>După acceptarea ofertei, prin transfer bancar sau ramburs la curier, la retur. Primești factură pentru lucrare.</p></details>
+        <details><summary>Pot urmări stadiul reparației?</summary><p>Da. Te ținem la curent telefonic sau pe WhatsApp la fiecare pas important: sosire, diagnostic, ofertă, finalizare, expediere.</p></details>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-alt">
+    <div class="container">
+      <div class="cta-panel">
+        <div>
+          <span class="eyebrow on-dark">Pregătit să trimiți?</span>
+          <h2>Începe cu o scurtă descriere a defectului.</h2>
+          <p>Completezi formularul, te sunăm pentru confirmare și comandăm curierul. Restul e treaba noastră.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary btn-lg" href="#solicita-reparatie">Solicită reparație</a>
+          <a class="btn btn-ghost-light btn-lg" href="https://wa.me/40775515613" target="_blank" rel="noopener"><svg class="icon icon-fill"><use href="#i-whatsapp"/></svg> WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGINA: Colaborări B2B  ->  colaborari-b2b.php
+     ============================================================ -->
+<section class="page" id="colaborari-b2b">
+  <div class="page-head with-icon">
+    <div class="container">
+      <div>
+        <ul class="breadcrumb"><li><a href="#acasa">Acasă</a></li><li>Colaborări B2B</li></ul>
+        <h1>Partener tehnic pentru service-uri, firme și instituții</h1>
+        <p class="lead">Preluăm reparațiile de placă de bază pe care nu le poți face în atelierul tău, întreținem parcul de laptopuri al firmei tale sau reparăm consolele din sala ta de gaming. Tarife de partener, prioritate în atelier, raport tehnic pentru fiecare echipament.</p>
+        <div class="page-head-actions">
+          <a class="btn btn-primary" href="#b2b-formular">Cere o ofertă de colaborare</a>
+          <a class="btn btn-ghost-light" href="mailto:contact@r89-repairs.ro"><svg class="icon"><use href="#i-mail"/></svg> contact@r89-repairs.ro</a>
+        </div>
+      </div>
+      <div class="head-icon"><svg class="icon"><use href="#i-users"/></svg></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Pentru cine</span>
+        <h2>Colaborăm cu patru tipuri de parteneri</h2>
+      </div>
+      <div class="b2b-for">
+        <div class="card">
+          <div class="card-icon"><svg class="icon"><use href="#i-wrench"/></svg></div>
+          <h4>Service-uri IT și GSM</h4>
+          <p>Subcontractezi reparațiile de placă de bază, BGA și daune lichide. Clientul rămâne al tău, echipamentul se întoarce la tine.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><svg class="icon"><use href="#i-building"/></svg></div>
+          <h4>Firme cu parc de laptopuri</h4>
+          <p>Reparații și întreținere pentru laptopurile angajaților, cu preluare de la sediu și raport per echipament.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><svg class="icon"><use href="#i-store"/></svg></div>
+          <h4>Magazine și retaileri</h4>
+          <p>Reparații post-garanție pentru clienții tăi, laptopuri și console, cu circuit clar de predare și retur.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><svg class="icon"><use href="#i-school"/></svg></div>
+          <h4>Săli de gaming, școli, instituții</h4>
+          <p>Console și laptopuri folosite intensiv. Intervenții rapide, ca echipamentele să nu stea pe tușă.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-alt">
+    <div class="container split">
+      <div>
+        <span class="eyebrow">Ce oferim partenerilor</span>
+        <h2>Condiții gândite pentru volum și predictibilitate</h2>
+        <ul class="check-list mt-24">
+          <li><strong>Tarife de partener</strong> pentru intervențiile recurente, stabilite după primele echipamente.</li>
+          <li><strong>Prioritate în atelier</strong>: echipamentele partenerilor intră la diagnostic înaintea celor individuale.</li>
+          <li><strong>Raport tehnic</strong> pentru fiecare echipament: defect constatat, intervenție, componente înlocuite, testare.</li>
+          <li><strong>Facturare lunară</strong> și situație centralizată pentru toate lucrările.</li>
+          <li><strong>Confidențialitate</strong>: nu accesăm datele de pe echipamente dincolo de ce cere testarea.</li>
+          <li><strong>Transport organizat</strong>: preluări periodice sau curier la cerere, de oriunde din țară.</li>
+        </ul>
+      </div>
+      <div class="steps vertical">
+        <div class="step"><div><h3>Discutăm nevoia</h3><p>Ne spui ce echipamente ai, ce volum estimezi și ce te blochează acum.</p></div></div>
+        <div class="step"><div><h3>Testăm cu primele echipamente</h3><p>Trimiți câteva lucrări reale. Vezi cum lucrăm, cum raportăm, cât durează.</p></div></div>
+        <div class="step"><div><h3>Stabilim condițiile</h3><p>Tarife, termene, mod de transport și facturare. Simplu, într-o pagină.</p></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="b2b-formular">
+    <div class="container-narrow">
+      <form class="form-card" action="#" method="post" data-mock novalidate>
+        <div class="form-body">
+          <h3>Cere o ofertă de colaborare</h3>
+          <p>Spune-ne pe scurt ce fel de echipamente ai și ce volum estimezi. Revenim cu un telefon.</p>
+          <div class="form-grid">
+            <div class="field"><label for="b2b-firma">Firma / instituția</label><input id="b2b-firma" name="firma" type="text" required></div>
+            <div class="field"><label for="b2b-persoana">Persoană de contact</label><input id="b2b-persoana" name="persoana" type="text" required></div>
+            <div class="field"><label for="b2b-telefon">Telefon</label><input id="b2b-telefon" name="telefon" type="tel" required></div>
+            <div class="field"><label for="b2b-email">Email</label><input id="b2b-email" name="email" type="email" required></div>
+            <div class="field">
+              <label for="b2b-tip">Tipul activității</label>
+              <select id="b2b-tip" name="tip_activitate" required>
+                <option value="">Alege</option>
+                <option value="service">Service IT / GSM</option>
+                <option value="firma">Firmă cu parc de laptopuri</option>
+                <option value="retail">Magazin / retailer</option>
+                <option value="gaming">Sală de gaming / instituție</option>
+                <option value="altele">Altceva</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="b2b-volum">Volum estimat</label>
+              <select id="b2b-volum" name="volum" required>
+                <option value="">Alege</option>
+                <option value="1-5">1 – 5 echipamente / lună</option>
+                <option value="5-20">5 – 20 echipamente / lună</option>
+                <option value="20+">peste 20 echipamente / lună</option>
+                <option value="ocazional">Ocazional</option>
+              </select>
+            </div>
+            <div class="field full"><label for="b2b-mesaj">Mesaj <span class="opt">(ce echipamente, ce probleme, din ce oraș)</span></label><textarea id="b2b-mesaj" name="mesaj" required></textarea></div>
+          </div>
+          <label class="check"><input type="checkbox" name="gdpr" required> <span>Sunt de acord ca datele de mai sus să fie folosite pentru a răspunde acestei cereri, conform <a href="#confidentialitate">Politicii de confidențialitate</a>.</span></label>
+          <div class="form-actions">
+            <button class="btn btn-primary btn-lg" type="submit">Trimite cererea de colaborare</button>
+            <span class="hint">Răspundem de obicei în aceeași zi lucrătoare.</span>
+          </div>
+        </div>
+        <div class="form-success"><svg class="icon"><use href="#i-check-circle"/></svg><div><strong>Cererea a fost trimisă.</strong> Te contactăm telefonic pentru a discuta detaliile colaborării.</div></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGINA: Contact  ->  contact.php
+     ============================================================ -->
+<section class="page" id="contact">
+  <div class="page-head">
+    <div class="container">
+      <ul class="breadcrumb"><li><a href="#acasa">Acasă</a></li><li>Contact</li></ul>
+      <h1>Contact</h1>
+      <p class="lead">Ne găsești în Arad, pe Strada Stupilor nr. 6, de luni până sâmbătă. Pentru întrebări rapide, WhatsApp-ul este cea mai scurtă cale.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>R89 Repairs</h3>
+          <p class="muted">Service reparații laptopuri și console</p>
+          <ul>
+            <li><span class="ci"><svg class="icon"><use href="#i-pin"/></svg></span><div><small>Adresă</small><b>Strada Stupilor nr. 6, Arad</b><span>Județul Arad, 310371</span></div></li>
+            <li><span class="ci"><svg class="icon"><use href="#i-phone"/></svg></span><div><small>Telefon</small><b><a href="tel:+40775515613">+40 775 515 613</a></b><span>Luni – Sâmbătă, 09:00 – 20:00</span></div></li>
+            <li><span class="ci"><svg class="icon icon-fill"><use href="#i-whatsapp"/></svg></span><div><small>WhatsApp</small><b><a href="https://wa.me/40775515613" target="_blank" rel="noopener">Scrie-ne pe WhatsApp</a></b><span>Poze cu defectul, întrebări rapide, stadiul reparației</span></div></li>
+            <li><span class="ci"><svg class="icon"><use href="#i-mail"/></svg></span><div><small>Email</small><b><a href="mailto:contact@r89-repairs.ro">contact@r89-repairs.ro</a></b><span>Pentru oferte, colaborări și documente</span></div></li>
+            <li><span class="ci"><svg class="icon"><use href="#i-clock"/></svg></span><div><small>Program</small>
+              <dl class="hours"><dt>Luni – Vineri</dt><dd>09:00 – 20:00</dd><dt>Sâmbătă</dt><dd>09:00 – 20:00</dd><dt>Duminică</dt><dd>Închis</dd></dl>
+            </div></li>
+          </ul>
+        </div>
+        <div class="map-frame">
+          <iframe title="Harta: R89 Repairs, Strada Stupilor nr. 6, Arad" src="https://www.google.com/maps?q=R89%20Electronics%2C%20Strada%20Stupilor%206%2C%20Arad&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-alt">
+    <div class="container-narrow">
+      <form class="form-card" action="#" method="post" data-mock novalidate>
+        <div class="form-body">
+          <h3>Scrie-ne</h3>
+          <p>Pentru o solicitare de reparație folosește <a href="#solicita-reparatie">formularul dedicat</a>, unde poți alege și modul de predare. Aici ne poți scrie orice altceva.</p>
+          <div class="form-grid">
+            <div class="field"><label for="c-nume">Nume și prenume</label><input id="c-nume" name="nume" type="text" required></div>
+            <div class="field"><label for="c-telefon">Telefon</label><input id="c-telefon" name="telefon" type="tel" required></div>
+            <div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" required></div>
+            <div class="field">
+              <label for="c-subiect">Subiect</label>
+              <select id="c-subiect" name="subiect">
+                <option value="intrebare">Întrebare generală</option>
+                <option value="stadiu">Stadiul unei reparații</option>
+                <option value="oferta">Ofertă de preț</option>
+                <option value="colaborare">Colaborare</option>
+                <option value="altceva">Altceva</option>
+              </select>
+            </div>
+            <div class="field full"><label for="c-mesaj">Mesaj</label><textarea id="c-mesaj" name="mesaj" required placeholder="Cu ce te putem ajuta?"></textarea></div>
+          </div>
+          <label class="check"><input type="checkbox" name="gdpr" required> <span>Sunt de acord ca datele de mai sus să fie folosite pentru a răspunde mesajului, conform <a href="#confidentialitate">Politicii de confidențialitate</a>.</span></label>
+          <div class="form-actions">
+            <button class="btn btn-primary btn-lg" type="submit">Trimite mesajul</button>
+            <span class="hint">Sau sună direct: <a href="tel:+40775515613">+40 775 515 613</a></span>
+          </div>
+        </div>
+        <div class="form-success"><svg class="icon"><use href="#i-check-circle"/></svg><div><strong>Mesajul a fost trimis.</strong> Îți răspundem cât de repede putem, de obicei în aceeași zi lucrătoare.</div></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGINA: Solicită reparație  ->  solicita-reparatie.php
+     ============================================================ -->
+<section class="page" id="solicita-reparatie">
+  <div class="page-head">
+    <div class="container">
+      <ul class="breadcrumb"><li><a href="#acasa">Acasă</a></li><li>Solicită reparație</li></ul>
+      <h1>Solicită o reparație</h1>
+      <p class="lead">Două minute de completat. Te contactăm pentru confirmare și, dacă nu ești din Arad, organizăm noi curierul. Nu trimite echipamentul înainte să vorbim.</p>
+    </div>
+  </div>
+
+  <div class="section section-alt">
+    <div class="container request-grid">
+      <form class="form-card" id="form-solicitare" action="#" method="post" data-mock novalidate>
+        <div class="form-body">
+          <h3>Formular de solicitare</h3>
+          <p>Toate câmpurile sunt necesare, cu excepția celor marcate ca opționale.</p>
+
+          <fieldset>
+            <legend>1. Date de contact</legend>
+            <div class="form-grid">
+              <div class="field"><label for="s-nume">Nume și prenume</label><input id="s-nume" name="nume" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="s-telefon">Telefon</label><input id="s-telefon" name="telefon" type="tel" autocomplete="tel" placeholder="07xx xxx xxx" required></div>
+              <div class="field"><label for="s-email">Email</label><input id="s-email" name="email" type="email" autocomplete="email" required></div>
+              <div class="field"><label for="s-adresa">Adresă <span class="opt">(stradă, număr, bloc, apartament)</span></label><input id="s-adresa" name="adresa" type="text" autocomplete="street-address" required></div>
+              <div class="field"><label for="s-localitate">Localitate</label><input id="s-localitate" name="localitate" type="text" required></div>
+              <div class="field">
+                <label for="s-judet">Județ</label>
+                <select id="s-judet" name="judet" required>
+                  <option value="">Alege județul</option>
+                  <option>Alba</option><option>Arad</option><option>Argeș</option><option>Bacău</option><option>Bihor</option><option>Bistrița-Năsăud</option><option>Botoșani</option><option>Brașov</option><option>Brăila</option><option>București</option><option>Buzău</option><option>Caraș-Severin</option><option>Călărași</option><option>Cluj</option><option>Constanța</option><option>Covasna</option><option>Dâmbovița</option><option>Dolj</option><option>Galați</option><option>Giurgiu</option><option>Gorj</option><option>Harghita</option><option>Hunedoara</option><option>Ialomița</option><option>Iași</option><option>Ilfov</option><option>Maramureș</option><option>Mehedinți</option><option>Mureș</option><option>Neamț</option><option>Olt</option><option>Prahova</option><option>Satu Mare</option><option>Sălaj</option><option>Sibiu</option><option>Suceava</option><option>Teleorman</option><option>Timiș</option><option>Tulcea</option><option>Vaslui</option><option>Vâlcea</option><option>Vrancea</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>2. Echipamentul</legend>
+            <div class="form-grid">
+              <div class="field">
+                <label for="echipament">Tipul echipamentului</label>
+                <select id="echipament" name="echipament" required>
+                  <option value="">Alege echipamentul</option>
+                  <option value="laptop">Laptop PC</option>
+                  <option value="macbook">MacBook Pro / Air</option>
+                  <option value="playstation">PlayStation</option>
+                  <option value="xbox">Xbox</option>
+                </select>
+              </div>
+              <div class="field"><label for="s-model">Model <span class="opt">(opțional)</span></label><input id="s-model" name="model" type="text" placeholder="ex. Dell XPS 15 9520, PS5 CFI-1216A, Xbox Series X"></div>
+              <div class="field full">
+                <label for="s-descriere">Descrierea problemei</label>
+                <textarea id="s-descriere" name="descriere" required placeholder="Ce ai observat și de când? S-a întâmplat ceva înainte (cădere, lichid, furtună, cablu scos brusc)? A mai fost la alt service?"></textarea>
+                <div class="hint">Cu cât mai multe detalii, cu atât diagnosticul e mai rapid. Poți trimite și poze pe WhatsApp după ce te contactăm.</div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>3. Cum ajunge echipamentul la noi</legend>
+            <div class="choice-cards">
+              <label>
+                <input type="radio" name="predare" value="personal" required>
+                <span class="choice-icon"><svg class="icon"><use href="#i-pin"/></svg></span>
+                <span class="choice-body"><b>Îl predau personal, în Arad</b><span>Strada Stupilor nr. 6. Luni – Sâmbătă, 09:00 – 20:00.</span></span>
+              </label>
+              <label>
+                <input type="radio" name="predare" value="curier" required>
+                <span class="choice-icon"><svg class="icon"><use href="#i-truck"/></svg></span>
+                <span class="choice-body"><b>Îl trimit prin curier</b><span>Comandăm noi ridicarea, de oriunde din România. Te sunăm înainte.</span></span>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>4. Acord</legend>
+            <label class="check"><input type="checkbox" name="termeni" required> <span>Am citit și accept <a href="#termeni-si-conditii">Termenii și condițiile</a> și <a href="#confidentialitate">Politica de confidențialitate</a>.</span></label>
+            <label class="check"><input type="checkbox" name="acord_contact" required> <span>Sunt de acord să fiu contactat telefonic sau pe WhatsApp în legătură cu această solicitare.</span></label>
+          </fieldset>
+
+          <div class="form-actions">
+            <button class="btn btn-primary btn-lg" type="submit">Solicit reparația</button>
+            <span class="hint">Te contactăm pentru confirmare și, dacă trimiți prin curier, pentru detaliile de expediere.</span>
+          </div>
+        </div>
+        <div class="form-success"><svg class="icon"><use href="#i-check-circle"/></svg><div><strong>Solicitarea a fost înregistrată.</strong> Te contactăm în cel mai scurt timp pentru confirmare. Dacă e urgent, sună la <a href="tel:+40775515613">+40 775 515 613</a>.</div></div>
+      </form>
+
+      <aside class="request-side">
+        <div class="card">
+          <h3>Ce se întâmplă după</h3>
+          <div class="steps vertical mt-24">
+            <div class="step"><div><h3>Te sunăm</h3><p>Confirmăm detaliile și, dacă e cazul, comandăm curierul.</p></div></div>
+            <div class="step"><div><h3>Diagnostic</h3><p>Identificăm cauza și îți explicăm ce am găsit.</p></div></div>
+            <div class="step"><div><h3>Ofertă</h3><p>Preț și termen, înainte de orice intervenție.</p></div></div>
+            <div class="step"><div><h3>Reparație și retur</h3><p>Testat sub sarcină, cu garanție. Predare în Arad sau curier.</p></div></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Preferi să vorbim direct?</h3>
+          <p>Luni – Sâmbătă, 09:00 – 20:00.</p>
+          <div class="cta-actions mt-24">
+            <a class="btn btn-outline" href="tel:+40775515613"><svg class="icon"><use href="#i-phone"/></svg> +40 775 515 613</a>
+            <a class="btn btn-wa" href="https://wa.me/40775515613" target="_blank" rel="noopener"><svg class="icon icon-fill"><use href="#i-whatsapp"/></svg> WhatsApp</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGINI LEGALE  ->  termeni-si-conditii.php, politica-de-confidentialitate.php
+     ============================================================ -->
+<section class="page" id="termeni-si-conditii">
+  <div class="page-head">
+    <div class="container">
+      <ul class="breadcrumb"><li><a href="#acasa">Acasă</a></li><li>Termeni și condiții</li></ul>
+      <h1>Termeni și condiții</h1>
+      <p class="lead">Condițiile în care R89 Repairs preia, diagnostichează și repară echipamentele clienților.</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container-narrow legal-body">
+      <p class="legal-meta">Ultima actualizare: septembrie 2026</p>
+      <h3>1. Informații generale</h3>
+      <p>Prezentul site și serviciile descrise în el sunt operate de R89 Repairs, cu punct de lucru în Arad, Strada Stupilor nr. 6. Prin trimiterea unei solicitări de reparație sau prin predarea unui echipament, clientul acceptă condițiile de mai jos.</p>
+      <h3>2. Preluarea echipamentelor</h3>
+      <p>Echipamentele pot fi predate personal la punctul de lucru sau expediate prin curier, după confirmarea telefonică a solicitării. La primire, echipamentul este fotografiat și înregistrat cu datele de identificare (model, serie, stare vizibilă, accesorii).</p>
+      <h3>3. Diagnostic și ofertă</h3>
+      <p>Orice intervenție este precedată de diagnostic. Clientul primește o ofertă cu prețul și termenul estimat, iar reparația începe numai după acceptarea ofertei. Dacă în timpul intervenției apar defecte suplimentare, clientul este informat înainte de continuarea lucrării.</p>
+      <h3>4. Prețuri și plată</h3>
+      <p>Prețurile comunicate în ofertă includ manopera și componentele înlocuite. Plata se face la predarea echipamentului, prin numerar, card, transfer bancar sau ramburs la curier. Pentru fiecare lucrare se emite factură.</p>
+      <h3>5. Garanție</h3>
+      <p>Lucrările efectuate beneficiază de garanție pentru intervenția realizată și pentru componentele înlocuite, pe perioada menționată pe fișa de service. Garanția nu acoperă defecte diferite de cel reparat, deteriorări mecanice, contact ulterior cu lichide sau intervenții efectuate de terți.</p>
+      <h3>6. Echipamente cu daune provocate de lichide</h3>
+      <p>Echipamentele care au intrat în contact cu lichide pot prezenta defecte latente care apar după reparație. Clientul este informat despre acest risc înainte de intervenție, iar condițiile de garanție pentru aceste cazuri sunt stabilite în ofertă.</p>
+      <h3>7. Echipamente neridicate</h3>
+      <p>Echipamentele finalizate sau nereparate care nu sunt ridicate sau pentru care nu se acceptă returul prin curier în termen de 90 de zile de la notificare pot fi valorificate pentru acoperirea costurilor, conform legislației în vigoare.</p>
+      <h3>8. Datele de pe echipamente</h3>
+      <p>Recomandăm clienților să realizeze o copie de siguranță a datelor înainte de predare. R89 Repairs nu accesează datele personale de pe echipamente dincolo de ce este necesar pentru testare și nu răspunde pentru pierderea datelor în cazul defectelor de stocare preexistente.</p>
+      <h3>9. Contact</h3>
+      <p>Pentru orice întrebare legată de acești termeni ne poți scrie la contact@r89-repairs.ro sau suna la +40 775 515 613.</p>
+    </div>
+  </div>
+</section>
+
+<section class="page" id="confidentialitate">
+  <div class="page-head">
+    <div class="container">
+      <ul class="breadcrumb"><li><a href="#acasa">Acasă</a></li><li>Politica de confidențialitate</li></ul>
+      <h1>Politica de confidențialitate</h1>
+      <p class="lead">Ce date colectăm prin acest site, de ce și cât timp le păstrăm.</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container-narrow legal-body">
+      <p class="legal-meta">Ultima actualizare: septembrie 2026</p>
+      <h3>1. Ce date colectăm</h3>
+      <p>Prin formularele de pe site colectăm numele, numărul de telefon, adresa de email, adresa poștală (pentru expedieri prin curier) și informațiile pe care le oferi despre echipament și defect.</p>
+      <h3>2. În ce scop</h3>
+      <p>Datele sunt folosite exclusiv pentru a răspunde solicitării tale: confirmarea cererii, organizarea transportului, comunicarea diagnosticului și a ofertei, emiterea documentelor fiscale și acordarea garanției.</p>
+      <h3>3. Temeiul legal</h3>
+      <p>Prelucrarea se face în baza executării contractului de prestări servicii solicitat de tine și, pentru comunicările de confirmare, în baza consimțământului exprimat la trimiterea formularului.</p>
+      <h3>4. Cui transmitem datele</h3>
+      <p>Adresa și telefonul sunt transmise firmei de curierat pentru ridicarea și livrarea coletului. Datele de facturare sunt transmise furnizorului de servicii contabile. Nu vindem și nu cedăm datele către terți în scopuri de marketing.</p>
+      <h3>5. Cât timp păstrăm datele</h3>
+      <p>Datele legate de o reparație sunt păstrate pe durata garanției și pe perioada cerută de legislația fiscală pentru documentele emise. Solicitările fără o reparație efectivă sunt șterse în cel mult 12 luni.</p>
+      <h3>6. Drepturile tale</h3>
+      <p>Ai dreptul de acces, rectificare, ștergere, restricționare și portabilitate a datelor, precum și dreptul de a depune o plângere la ANSPDCP. Pentru exercitarea acestor drepturi, scrie-ne la contact@r89-repairs.ro.</p>
+      <h3>7. Cookie-uri</h3>
+      <p>Site-ul folosește cookie-uri strict necesare funcționării și, opțional, cookie-uri de statistică anonimizată. Harta Google încorporată în pagina de contact poate seta cookie-uri proprii, conform politicii Google.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER (comun tuturor paginilor) -> partials/footer.php
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <a class="brand" href="#acasa"><span class="brand-mark"><span>R89</span></span><span class="brand-text"><b>R89 Repairs</b><small>Service electronic · Arad</small></span></a>
+      <p>Reparații laptopuri, MacBook, PlayStation și Xbox la nivel de placă de bază. Atelier în Arad, preluare prin curier din toată România. Peste 17 ani de experiență în reparații electronice.</p>
+      <div class="g-score" style="color:#a9b6c6;font-size:.9rem;display:flex;align-items:center;gap:8px"><span class="stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span> 5.0 pe Google · 33 recenzii</div>
+    </div>
+    <div>
+      <h4>Servicii</h4>
+      <ul>
+        <li><a href="#servicii-laptopuri">Reparații laptopuri</a></li>
+        <li><a href="#servicii-macbook">Reparații MacBook Pro / Air</a></li>
+        <li><a href="#servicii-playstation">Reparații PlayStation</a></li>
+        <li><a href="#servicii-xbox">Reparații Xbox</a></li>
+        <li><a href="#reparatii-prin-curier">Reparații prin curier</a></li>
+        <li><a href="#colaborari-b2b">Colaborări B2B</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Informații</h4>
+      <ul>
+        <li><a href="#despre-noi">Despre noi</a></li>
+        <li><a href="#recenzii">Recenzii</a></li>
+        <li><a href="#articole">Articole</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#solicita-reparatie">Solicită reparație</a></li>
+        <li><a href="#termeni-si-conditii">Termeni și condiții</a></li>
+        <li><a href="#confidentialitate">Politica de confidențialitate</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul class="footer-contact">
+        <li><svg class="icon"><use href="#i-pin"/></svg><span>Strada Stupilor nr. 6<br>Arad, 310371</span></li>
+        <li><svg class="icon"><use href="#i-phone"/></svg><a href="tel:+40775515613">+40 775 515 613</a></li>
+        <li><svg class="icon icon-fill"><use href="#i-whatsapp"/></svg><a href="https://wa.me/40775515613" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><svg class="icon"><use href="#i-mail"/></svg><a href="mailto:contact@r89-repairs.ro">contact@r89-repairs.ro</a></li>
+        <li><svg class="icon"><use href="#i-clock"/></svg><span>Luni – Sâmbătă: 09:00 – 20:00<br>Duminică: închis</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-legal">
+    <div class="container">
+      <a class="anpc-badge" href="https://anpc.ro/ce-este-sal/" target="_blank" rel="noopener"><svg class="icon"><use href="#i-shield"/></svg> ANPC · SAL</a>
+      <a class="anpc-badge" href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener"><svg class="icon"><use href="#i-shield"/></svg> SOL · Soluționarea online a litigiilor</a>
+      <p>R89 Repairs este un service independent. Nu suntem un centru de service autorizat și nu suntem afiliați cu Apple, Sony, Microsoft, Dell, HP, Lenovo, ASUS sau alți producători. Denumirile de produse și mărcile aparțin proprietarilor lor și sunt folosite doar pentru identificarea echipamentelor reparate.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© 2026 R89 Repairs, Arad. Toate drepturile rezervate.</span>
+      <ul>
+        <li><a href="#termeni-si-conditii">Termeni și condiții</a></li>
+        <li><a href="#confidentialitate">Confidențialitate</a></li>
+        <li><a href="#top">Sus ↑</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
