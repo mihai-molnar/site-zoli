@@ -20,13 +20,21 @@
     toggle.setAttribute('aria-expanded', 'false');
     toggle.setAttribute('aria-label', 'Deschide meniul');
   }
+  function openNav() {
+    /* panoul nu depășește ecranul: înălțimea disponibilă sub header */
+    nav.style.maxHeight = Math.max(240, window.innerHeight - header.getBoundingClientRect().bottom) + 'px';
+    document.body.classList.add('nav-open');
+    toggle.setAttribute('aria-expanded', 'true');
+    toggle.setAttribute('aria-label', 'Închide meniul');
+  }
   toggle.addEventListener('click', function () {
-    /* panoul mobil începe exact sub header, indiferent de înălțimea topbar-ului */
-    nav.style.top = Math.round(header.getBoundingClientRect().bottom) + 'px';
-    var open = document.body.classList.toggle('nav-open');
-    toggle.setAttribute('aria-expanded', String(open));
-    toggle.setAttribute('aria-label', open ? 'Închide meniul' : 'Deschide meniul');
+    if (document.body.classList.contains('nav-open')) closeNav(); else openNav();
   });
+  /* tap în afara header-ului (pe fundalul întunecat) închide meniul */
+  document.addEventListener('click', function (e) {
+    if (document.body.classList.contains('nav-open') && !header.contains(e.target)) closeNav();
+  });
+  window.addEventListener('resize', function () { if (!mobile.matches) closeNav(); });
 
   /* Dropdown "Servicii": hover pe desktop (CSS), tap pe mobil (JS) */
   Array.prototype.forEach.call(document.querySelectorAll('.main-nav .has-dropdown > a'), function (link) {
